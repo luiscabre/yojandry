@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yojandry Nava — Protocolo de Restauración Metabólica | Bebidas Nutracéuticas FUXION</title>
-  <meta name="description" content="No estás cansada. Estás saturada. Protocolo estructurado de bebidas nutracéuticas que restaura tu sueño, reduce la inflamación y te devuelve la energía real.">
-  <meta name="keywords" content="bebidas nutracéuticas, fuxion, protocolo metabólico, prunex, floraliv, rexet, vita xtra t, desintoxicación, salud digestiva">
+  <meta name="description"
+    content="No estás cansada. Estás saturada. Protocolo estructurado de bebidas nutracéuticas que restaura tu sueño, reduce la inflamación y te devuelve la energía real.">
+  <meta name="keywords"
+    content="bebidas nutracéuticas, fuxion, protocolo metabólico, prunex, floraliv, rexet, vita xtra t, desintoxicación, salud digestiva">
   <meta name="theme-color" content="#4A835A">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Protocolo de Restauración Metabólica | Yojandry Nava">
-  <meta property="og:description" content="Restaura tu sueño, desinflama tu organismo y activa tu energía real con bebidas nutracéuticas 100% naturales.">
+  <meta property="og:description"
+    content="Restaura tu sueño, desinflama tu organismo y activa tu energía real con bebidas nutracéuticas 100% naturales.">
   <meta property="og:image" content="img/hero/yojandry-hero.jpg">
   <meta property="og:type" content="website">
 
   <!-- Fuentes de Google: Lora + DM Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
   <!-- Estilos Maestros Completos (Funciona Offline y en file:///) -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="bg-canvas min-h-screen font-sans text-brand-dark antialiased">
 
   <!-- 1. BARRA SUPERIOR DE ANUNCIO (EXACTO AL ARCHIVO ADJUNTADO) -->
-  <div class="text-white text-center py-2 px-4 text-xs md:text-sm tracking-wide shadow-sm" style="background-color: #24412F;">
+  <div class="text-white text-center py-2 px-4 text-xs md:text-sm tracking-wide shadow-sm"
+    style="background-color: #24412F;">
     <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
       <span>🌿</span>
       <p class="font-medium">No estás cansada. Estás saturada — Protocolo de Restauración Metabólica</p>
@@ -37,7 +45,8 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
         <!-- Logo -->
-        <a href="#" class="font-serif text-3xl tracking-tight text-brand-dark flex items-center font-normal no-underline">
+        <a href="#"
+          class="font-serif text-3xl tracking-tight text-brand-dark flex items-center font-normal no-underline">
           Yojandry.
         </a>
 
@@ -52,9 +61,11 @@
         <!-- Acciones: Icono de Carrito y Botón Haz el Test -->
         <div class="flex items-center gap-5 sm:gap-6">
           <!-- Icono de Bolsa / Carrito -->
-          <button onclick="openCart()" class="relative p-2 text-brand-dark hover:text-brand-forest transition-colors flex items-center justify-center focus:outline-none" aria-label="Ver bolsa de compras">
+          <button onclick="openCart()"
+            class="relative p-2 text-brand-dark hover:text-brand-forest transition-colors flex items-center justify-center focus:outline-none"
+            aria-label="Ver bolsa de compras">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
             </svg>
             <span id="cart-count" class="cart-badge hidden">0</span>
           </button>
@@ -65,9 +76,10 @@
           </a>
 
           <!-- Botón Menú Móvil -->
-          <button id="mobile-menu-btn" class="mobile-nav-toggle md:hidden p-2 rounded-lg text-brand-dark hover:bg-black/5" aria-label="Menú">
+          <button id="mobile-menu-btn"
+            class="mobile-nav-toggle md:hidden p-2 rounded-lg text-brand-dark hover:bg-black/5" aria-label="Menú">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
@@ -83,7 +95,8 @@
         <a href="#faq" class="mobile-nav-link" onclick="closeMobileMenu()">FAQ</a>
         <div class="pt-4 flex flex-col gap-3">
           <a href="#quiz" class="btn-header-test w-full text-center py-3" onclick="closeMobileMenu()">Haz el Test</a>
-          <button onclick="openCart(); closeMobileMenu();" class="btn-outline w-full text-center py-3">Ver Carrito de Compras</button>
+          <button onclick="openCart(); closeMobileMenu();" class="btn-outline w-full text-center py-3">Ver Carrito de
+            Compras</button>
         </div>
       </div>
     </div>
@@ -93,21 +106,22 @@
 
     <!-- 3. HERO (CON FONDO ABSTRACTO ONDAS TURQUESA/LIMA EN SEGUNDO PLANO SUTIL - ESTILO SECCIÓN 5) -->
     <section class="hero-teal-gradient pt-14 pb-24 sm:pt-16 sm:pb-28 lg:pt-20 lg:pb-36 relative overflow-hidden">
-      
+
       <!-- Fondo estilo Sección Beneficios (Protocolo Estructurado) en segundo plano sutil -->
       <div class="hero-wave-bg-canvas" aria-hidden="true">
         <div class="hero-wave-bg-image"></div>
-        <svg class="hero-guilloche-ribbon" viewBox="0 0 1440 600" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M -100 120 C 350 -40, 750 380, 1540 160" stroke="#ffffff" stroke-width="1.3" opacity="0.60"/>
-          <path d="M -100 135 C 350 -25, 750 395, 1540 175" stroke="#ffffff" stroke-width="1.1" opacity="0.50"/>
-          <path d="M -100 150 C 350 -10, 750 410, 1540 190" stroke="#ffffff" stroke-width="1.0" opacity="0.42"/>
-          <path d="M -100 165 C 350 5, 750 425, 1540 205" stroke="#ffffff" stroke-width="0.9" opacity="0.36"/>
-          <path d="M -100 180 C 350 20, 750 440, 1540 220" stroke="#ffffff" stroke-width="0.8" opacity="0.30"/>
-          <path d="M -100 195 C 350 35, 750 455, 1540 235" stroke="#ffffff" stroke-width="0.7" opacity="0.25"/>
-          
-          <path d="M -80 380 C 420 180, 920 540, 1540 320" stroke="#ffffff" stroke-width="1.2" opacity="0.40"/>
-          <path d="M -80 395 C 420 195, 920 555, 1540 335" stroke="#ffffff" stroke-width="1.0" opacity="0.35"/>
-          <path d="M -80 410 C 420 210, 920 570, 1540 350" stroke="#ffffff" stroke-width="0.8" opacity="0.28"/>
+        <svg class="hero-guilloche-ribbon" viewBox="0 0 1440 600" fill="none" preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M -100 120 C 350 -40, 750 380, 1540 160" stroke="#ffffff" stroke-width="1.3" opacity="0.60" />
+          <path d="M -100 135 C 350 -25, 750 395, 1540 175" stroke="#ffffff" stroke-width="1.1" opacity="0.50" />
+          <path d="M -100 150 C 350 -10, 750 410, 1540 190" stroke="#ffffff" stroke-width="1.0" opacity="0.42" />
+          <path d="M -100 165 C 350 5, 750 425, 1540 205" stroke="#ffffff" stroke-width="0.9" opacity="0.36" />
+          <path d="M -100 180 C 350 20, 750 440, 1540 220" stroke="#ffffff" stroke-width="0.8" opacity="0.30" />
+          <path d="M -100 195 C 350 35, 750 455, 1540 235" stroke="#ffffff" stroke-width="0.7" opacity="0.25" />
+
+          <path d="M -80 380 C 420 180, 920 540, 1540 320" stroke="#ffffff" stroke-width="1.2" opacity="0.40" />
+          <path d="M -80 395 C 420 195, 920 555, 1540 335" stroke="#ffffff" stroke-width="1.0" opacity="0.35" />
+          <path d="M -80 410 C 420 210, 920 570, 1540 350" stroke="#ffffff" stroke-width="0.8" opacity="0.28" />
         </svg>
       </div>
 
@@ -120,27 +134,30 @@
 
       <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-20">
         <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          
-          <!-- Columna Texto Hero -->
-          <div class="lg:col-span-7">
-            <!-- Badge Glassmorphism -->
-            <div class="hero-glass-badge mb-5">
-              <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-              <span class="text-xs font-bold text-brand-dark tracking-wider uppercase">Superfood • Protocolo Clínico</span>
+
+          <!-- Columna Texto Hero (En móvil debajo de la foto: order-2; en desktop a la izquierda: lg:order-1) -->
+          <div class="lg:col-span-7 order-2 lg:order-1">
+            <!-- Badge Glassmorphism (Visible en Desktop) -->
+            <div class="hero-glass-badge mb-5 hidden lg:inline-flex items-center">
+              <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse shrink-0"></span>
+              <span class="text-xs font-bold text-brand-dark tracking-wider uppercase whitespace-nowrap">Superfood • Protocolo Clínico</span>
               <span class="text-brand-dark/30">|</span>
               <span class="text-amber-500 text-xs">★★★★★</span>
-              <span class="text-[11px] font-semibold text-brand-dark uppercase tracking-wider">4.9 Valoración</span>
+              <span class="text-[11px] font-semibold text-brand-dark uppercase tracking-wider whitespace-nowrap">4.9 Valoración</span>
             </div>
 
             <!-- Titular Principal Proporcional con Contraste Óptimo sobre #CDFAE0 -->
-            <h1 class="text-3xl sm:text-4xl lg:text-[46px] xl:text-[50px] font-extrabold text-brand-dark leading-[1.14] mb-5 tracking-tight font-sans hero-title-shadow">
+            <h1
+              class="text-3xl sm:text-4xl lg:text-[46px] xl:text-[50px] font-extrabold text-brand-dark leading-[1.14] mb-5 tracking-tight font-sans hero-title-shadow">
               NO ESTÁS CANSADA.<br>
               <span class="font-serif italic font-normal text-brand-forest">Tu cuerpo está saturado.</span>
             </h1>
 
             <!-- Bajada Editorial Nítida y Legible -->
             <p class="text-base sm:text-lg text-brand-dark/85 leading-relaxed mb-7 max-w-xl font-normal">
-              No es falta de voluntad ni el paso de los años. Es una sobrecarga tóxica silenciosa. Un protocolo guiado con bebidas nutracéuticas puras que restaura tu ciclo de sueño, desinflama tu organismo y reactiva tu energía celular real.
+              No es falta de voluntad ni el paso de los años. Es una sobrecarga tóxica silenciosa. Un protocolo guiado
+              con bebidas nutracéuticas puras que restaura tu ciclo de sueño, desinflama tu organismo y reactiva tu
+              energía celular real.
             </p>
 
             <!-- Acciones Principales -->
@@ -148,12 +165,14 @@
               <a href="#protocolo" class="btn-hero-white">
                 <span>Conoce el Protocolo</span>
                 <svg class="w-4 h-4 ml-0.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
-              <a href="https://wa.me/573143096984?text=Hola%20Yojandry%2C%20quiero%20conocer%20el%20Protocolo%20de%20Bebidas%20Nutraceuticas" target="_blank" rel="noopener" class="btn-hero-outline">
+              <a href="https://wa.me/573143096984?text=Hola%20Yojandry%2C%20quiero%20conocer%20el%20Protocolo%20de%20Bebidas%20Nutraceuticas"
+                target="_blank" rel="noopener" class="btn-hero-outline">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
                 <span>WhatsApp Directo</span>
               </a>
@@ -164,60 +183,80 @@
               <div class="grid grid-cols-3 divide-x divide-brand-dark/15">
                 <div class="pr-3 sm:pr-5 text-left">
                   <p class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-dark leading-none">4</p>
-                  <p class="text-[11px] sm:text-xs text-brand-forest uppercase tracking-wider font-semibold mt-1.5">Fases</p>
+                  <p class="text-[11px] sm:text-xs text-brand-forest uppercase tracking-wider font-semibold mt-1.5">
+                    Fases</p>
                 </div>
                 <div class="px-3 sm:px-5 text-left">
                   <p class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-dark leading-none">100%</p>
-                  <p class="text-[11px] sm:text-xs text-brand-forest uppercase tracking-wider font-semibold mt-1.5">Natural</p>
+                  <p class="text-[11px] sm:text-xs text-brand-forest uppercase tracking-wider font-semibold mt-1.5">
+                    Natural</p>
                 </div>
                 <div class="pl-3 sm:pl-5 text-left">
                   <p class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-dark leading-none">0</p>
-                  <p class="text-[11px] sm:text-xs text-brand-forest uppercase tracking-wider font-semibold mt-1.5">Dietas Extremas</p>
+                  <p class="text-[11px] sm:text-xs text-brand-forest uppercase tracking-wider font-semibold mt-1.5">
+                    Dietas Extremas</p>
                 </div>
               </div>
             </div>
           </div>
 
-                              <!-- Columna Imagen Hero (Container idéntico a sección 'Por qué funciona el Protocolo' con más altura para cuerpo completo) -->
-          <div class="lg:col-span-5 relative flex items-center justify-center">
+          <!-- Columna Imagen Hero (En móvil va primero: order-1; en desktop a la derecha: lg:order-2) -->
+          <div class="lg:col-span-5 relative flex flex-col items-center justify-center order-1 lg:order-2">
+
+            <!-- Badge Glassmorphism visible arriba de la foto en vista móvil (dividido en 2 líneas limpias sin solaparse) -->
+            <div class="hero-glass-badge mb-5 lg:hidden flex flex-col items-center justify-center text-center gap-1.5 py-2.5 px-5 rounded-2xl shadow-sm">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse shrink-0"></span>
+                <span class="text-[11px] sm:text-xs font-bold text-brand-dark tracking-wider uppercase whitespace-nowrap">Superfood • Protocolo Clínico</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-amber-500 text-xs tracking-tight">★★★★★</span>
+                <span class="text-[10px] sm:text-[11px] font-semibold text-brand-dark uppercase tracking-wider whitespace-nowrap">4.9 Valoración</span>
+              </div>
+            </div>
+
             <div class="relative w-full max-w-[340px] sm:max-w-[360px] lg:max-w-[380px] mx-auto">
-              
+
               <!-- Container con borde blanco, p-2, rounded-3xl y shadow-xl (formato portrait para apreciar la foto de cuerpo completo) -->
               <div class="w-full aspect-[9/16] rounded-3xl overflow-hidden shadow-xl bg-white p-2">
-                <img src="img/maire-hero.jpg" 
-                     alt="Yojandry Nava - Embajadora FuXion" 
-                     class="w-full h-full object-cover object-center rounded-2xl select-none"
-                     style="object-position: center;">
+                <img src="img/maire-hero.jpg" alt="Yojandry Nava - Embajadora FuXion"
+                  class="w-full h-full object-cover object-center rounded-2xl select-none"
+                  style="object-position: center;">
               </div>
 
               <!-- Pill Flotante Superior -->
-              <div class="absolute top-4 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md py-1.5 px-3.5 rounded-full shadow-lg border border-black/5 flex items-center gap-2 float-animation z-10">
+              <div
+                class="absolute top-4 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md py-1.5 px-3.5 rounded-full shadow-lg border border-black/5 flex items-center gap-2 float-animation z-10">
                 <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                 <span class="text-xs font-bold text-brand-dark">Protocolo Clínico Activo</span>
               </div>
 
               <!-- Pill Flotante con Icono de Play -->
-              <div class="absolute bottom-4 -right-4 sm:-right-6 bg-white/95 backdrop-blur-md py-2 px-3.5 rounded-full shadow-xl border border-black/5 flex items-center gap-2.5 z-10">
-                <div class="w-8 h-8 rounded-full flex items-center justify-center text-white shrink-0" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
-                  <svg class="w-3.5 h-3.5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <div
+                class="absolute bottom-4 -right-4 sm:-right-6 bg-white/95 backdrop-blur-md py-2 px-3.5 rounded-full shadow-xl border border-black/5 flex items-center gap-2.5 z-10">
+                <div class="w-8 h-8 rounded-full flex items-center justify-center text-white shrink-0"
+                  style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+                  <svg class="w-3.5 h-3.5 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
                 </div>
                 <div>
-                  <p class="text-[9px] text-brand-muted uppercase font-bold tracking-wider leading-none mb-0.5">Metabolismo</p>
+                  <p class="text-[9px] text-brand-muted uppercase font-bold tracking-wider leading-none mb-0.5">
+                    Metabolismo</p>
                   <p class="text-xs font-bold text-brand-dark leading-none">Energía 100% Real</p>
                 </div>
               </div>
             </div>
           </div>
-          </div>
-
         </div>
 
-        <!-- Indicador de Carrusel (Slider Dots) -->
-        <div class="flex items-center justify-center gap-2 pt-8 pb-2">
-          <span class="hero-slider-dot"></span>
-          <span class="hero-slider-dot active"></span>
-          <span class="hero-slider-dot"></span>
-        </div>
+      </div>
+
+      <!-- Indicador de Carrusel (Slider Dots) -->
+      <div class="flex items-center justify-center gap-2 pt-8 pb-2">
+        <span class="hero-slider-dot"></span>
+        <span class="hero-slider-dot active"></span>
+        <span class="hero-slider-dot"></span>
       </div>
 
       <!-- Onda Orgánica Inferior Proporcional -->
@@ -233,32 +272,49 @@
       <!-- Animación sutil de puntos y destellos en fondo blanco sólido -->
       <div class="pain-sparkles-wrap" aria-hidden="true">
         <!-- Destellos sutiles en verde botánico y oro -->
-        <svg class="pain-sparkle" style="top: 10%; left: 8%; width: 14px; height: 14px; animation-duration: 4.8s;" viewBox="0 0 24 24" fill="none">
-          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#6FA77C"/>
+        <svg class="pain-sparkle" style="top: 10%; left: 8%; width: 14px; height: 14px; animation-duration: 4.8s;"
+          viewBox="0 0 24 24" fill="none">
+          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#6FA77C" />
         </svg>
-        <svg class="pain-sparkle" style="top: 14%; right: 9%; width: 13px; height: 13px; animation-duration: 5.4s; animation-delay: -1.6s;" viewBox="0 0 24 24" fill="none">
-          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#C9A265"/>
+        <svg class="pain-sparkle"
+          style="top: 14%; right: 9%; width: 13px; height: 13px; animation-duration: 5.4s; animation-delay: -1.6s;"
+          viewBox="0 0 24 24" fill="none">
+          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#C9A265" />
         </svg>
-        <svg class="pain-sparkle" style="top: 38%; left: 4%; width: 11px; height: 11px; animation-duration: 6.1s; animation-delay: -2.4s;" viewBox="0 0 24 24" fill="none">
-          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#87C295"/>
+        <svg class="pain-sparkle"
+          style="top: 38%; left: 4%; width: 11px; height: 11px; animation-duration: 6.1s; animation-delay: -2.4s;"
+          viewBox="0 0 24 24" fill="none">
+          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#87C295" />
         </svg>
-        <svg class="pain-sparkle" style="top: 55%; right: 4%; width: 15px; height: 15px; animation-duration: 4.7s; animation-delay: -0.8s;" viewBox="0 0 24 24" fill="none">
-          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#6FA77C"/>
+        <svg class="pain-sparkle"
+          style="top: 55%; right: 4%; width: 15px; height: 15px; animation-duration: 4.7s; animation-delay: -0.8s;"
+          viewBox="0 0 24 24" fill="none">
+          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#6FA77C" />
         </svg>
-        <svg class="pain-sparkle" style="bottom: 15%; left: 7%; width: 12px; height: 12px; animation-duration: 5.5s; animation-delay: -3.0s;" viewBox="0 0 24 24" fill="none">
-          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#C9A265"/>
+        <svg class="pain-sparkle"
+          style="bottom: 15%; left: 7%; width: 12px; height: 12px; animation-duration: 5.5s; animation-delay: -3.0s;"
+          viewBox="0 0 24 24" fill="none">
+          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#C9A265" />
         </svg>
-        <svg class="pain-sparkle" style="bottom: 8%; right: 10%; width: 14px; height: 14px; animation-duration: 6.2s; animation-delay: -1.3s;" viewBox="0 0 24 24" fill="none">
-          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#87C295"/>
+        <svg class="pain-sparkle"
+          style="bottom: 8%; right: 10%; width: 14px; height: 14px; animation-duration: 6.2s; animation-delay: -1.3s;"
+          viewBox="0 0 24 24" fill="none">
+          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#87C295" />
         </svg>
 
         <!-- Puntos sutiles -->
-        <span class="pain-dot" style="top: 18%; left: 18%; width: 3px; height: 3px; background-color: #87C295; animation-duration: 4.4s;"></span>
-        <span class="pain-dot" style="top: 28%; right: 16%; width: 2.5px; height: 2.5px; background-color: #C9A265; animation-duration: 5.1s; animation-delay: -1.2s;"></span>
-        <span class="pain-dot" style="top: 48%; left: 6%; width: 3px; height: 3px; background-color: #6FA77C; animation-duration: 4.9s; animation-delay: -2.7s;"></span>
-        <span class="pain-dot" style="top: 68%; right: 7%; width: 3.5px; height: 3.5px; background-color: #87C295; animation-duration: 5.3s; animation-delay: -3.2s;"></span>
-        <span class="pain-dot" style="bottom: 12%; left: 16%; width: 2.5px; height: 2.5px; background-color: #C9A265; animation-duration: 5.8s; animation-delay: -0.5s;"></span>
-        <span class="pain-dot" style="bottom: 6%; right: 24%; width: 3px; height: 3px; background-color: #87C295; animation-duration: 4.6s; animation-delay: -2.1s;"></span>
+        <span class="pain-dot"
+          style="top: 18%; left: 18%; width: 3px; height: 3px; background-color: #87C295; animation-duration: 4.4s;"></span>
+        <span class="pain-dot"
+          style="top: 28%; right: 16%; width: 2.5px; height: 2.5px; background-color: #C9A265; animation-duration: 5.1s; animation-delay: -1.2s;"></span>
+        <span class="pain-dot"
+          style="top: 48%; left: 6%; width: 3px; height: 3px; background-color: #6FA77C; animation-duration: 4.9s; animation-delay: -2.7s;"></span>
+        <span class="pain-dot"
+          style="top: 68%; right: 7%; width: 3.5px; height: 3.5px; background-color: #87C295; animation-duration: 5.3s; animation-delay: -3.2s;"></span>
+        <span class="pain-dot"
+          style="bottom: 12%; left: 16%; width: 2.5px; height: 2.5px; background-color: #C9A265; animation-duration: 5.8s; animation-delay: -0.5s;"></span>
+        <span class="pain-dot"
+          style="bottom: 6%; right: 24%; width: 3px; height: 3px; background-color: #87C295; animation-duration: 4.6s; animation-delay: -2.1s;"></span>
       </div>>
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center mb-16">
@@ -274,60 +330,79 @@
 
         <!-- Grid: 3 cajas arriba y 2 cajas abajo centradas -->
         <div class="grid grid-cols-1 md:grid-cols-6 gap-6 max-w-6xl mx-auto">
-          
+
           <!-- Card 1 (Fila 1, Columna 1) -->
-          <div class="md:col-span-2 bg-canvas-light rounded-2xl p-6 sm:p-7 border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md text-center flex flex-col items-center">
-            <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 text-white shadow-md mx-auto" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+          <div
+            class="md:col-span-2 bg-canvas-light rounded-2xl p-6 sm:p-7 border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md text-center flex flex-col items-center">
+            <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 text-white shadow-md mx-auto"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
               </svg>
             </div>
             <h3 class="font-bold text-brand-dark mb-2 text-base">Despertar Agotada</h3>
-            <p class="text-sm text-brand-muted leading-relaxed">Aunque hayas dormido 8 horas, la sensación de cansancio y pesadez sigue ahí.</p>
+            <p class="text-sm text-brand-muted leading-relaxed">Aunque hayas dormido 8 horas, la sensación de cansancio
+              y pesadez sigue ahí.</p>
           </div>
 
           <!-- Card 2 (Fila 1, Columna 2) -->
-          <div class="md:col-span-2 bg-canvas-light rounded-2xl p-6 sm:p-7 border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md text-center flex flex-col items-center">
-            <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 text-white shadow-md mx-auto" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+          <div
+            class="md:col-span-2 bg-canvas-light rounded-2xl p-6 sm:p-7 border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md text-center flex flex-col items-center">
+            <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 text-white shadow-md mx-auto"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
             </div>
             <h3 class="font-bold text-brand-dark mb-2 text-base">Inflamación Diaria</h3>
-            <p class="text-sm text-brand-muted leading-relaxed">Digestión lenta, pesadez estomacal después de comer y distensión en el abdomen.</p>
+            <p class="text-sm text-brand-muted leading-relaxed">Digestión lenta, pesadez estomacal después de comer y
+              distensión en el abdomen.</p>
           </div>
 
           <!-- Card 3 (Fila 1, Columna 3) -->
-          <div class="md:col-span-2 bg-canvas-light rounded-2xl p-6 sm:p-7 border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md text-center flex flex-col items-center">
-            <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 text-white shadow-md mx-auto" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+          <div
+            class="md:col-span-2 bg-canvas-light rounded-2xl p-6 sm:p-7 border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md text-center flex flex-col items-center">
+            <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 text-white shadow-md mx-auto"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             <h3 class="font-bold text-brand-dark mb-2 text-base">Ansiedad Nocturna</h3>
-            <p class="text-sm text-brand-muted leading-relaxed">Antojos de dulce tarde en la noche, mente acelerada y dificultad para descansar.</p>
+            <p class="text-sm text-brand-muted leading-relaxed">Antojos de dulce tarde en la noche, mente acelerada y
+              dificultad para descansar.</p>
           </div>
 
           <!-- Card 4 (Fila 2, Columna 1 centrada: md:col-start-2) -->
-          <div class="md:col-start-2 md:col-span-2 bg-canvas-light rounded-2xl p-6 sm:p-7 border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md text-center flex flex-col items-center">
-            <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 text-white shadow-md mx-auto" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+          <div
+            class="md:col-start-2 md:col-span-2 bg-canvas-light rounded-2xl p-6 sm:p-7 border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md text-center flex flex-col items-center">
+            <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 text-white shadow-md mx-auto"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
               </svg>
             </div>
             <h3 class="font-bold text-brand-dark mb-2 text-base">Bajones de Tarde</h3>
-            <p class="text-sm text-brand-muted leading-relaxed">A mitad del día el rendimiento cae y dependes de litros de café para funcionar.</p>
+            <p class="text-sm text-brand-muted leading-relaxed">A mitad del día el rendimiento cae y dependes de litros
+              de café para funcionar.</p>
           </div>
 
           <!-- Card 5 (Fila 2, Columna 2 centrada) -->
-          <div class="md:col-span-2 bg-canvas-light rounded-2xl p-6 sm:p-7 border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md text-center flex flex-col items-center">
-            <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 text-white shadow-md mx-auto" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+          <div
+            class="md:col-span-2 bg-canvas-light rounded-2xl p-6 sm:p-7 border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-md text-center flex flex-col items-center">
+            <div class="w-16 h-16 rounded-2xl flex items-center justify-center mb-5 text-white shadow-md mx-auto"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
               </svg>
             </div>
             <h3 class="font-bold text-brand-dark mb-2 text-base">Metabolismo Lento</h3>
-            <p class="text-sm text-brand-muted leading-relaxed">Sientes que tu cuerpo está saturado y ya no responde a los hábitos saludables.</p>
+            <p class="text-sm text-brand-muted leading-relaxed">Sientes que tu cuerpo está saturado y ya no responde a
+              los hábitos saludables.</p>
           </div>
 
         </div>
@@ -335,7 +410,7 @@
     </section>
     <!-- 5. PILARES & BENEFICIOS CLAVE (RECREACIÓN DEL DISEÑO TURQUESA/LIMA ADJUNTADO + SUFICIENTE PADDING SUPERIOR E INFERIOR) -->
     <section class="pt-36 pb-36 sm:pt-44 sm:pb-44 lg:pt-52 lg:pb-52 benefits-wave-bg relative overflow-hidden">
-      
+
       <!-- Borde Onda Superior (Onda continua separadora con la sección previa) -->
       <div class="absolute top-0 left-0 right-0 w-full overflow-hidden leading-none z-10 pointer-events-none">
         <svg class="relative block w-full h-12 sm:h-16 lg:h-24" viewBox="0 0 1440 100" preserveAspectRatio="none">
@@ -344,78 +419,95 @@
       </div>
 
       <!-- Trazos vectoriales guilloche de líneas finas paralelas (Recreación en alta definición del diseño adjunto) -->
-      <svg class="benefits-guilloche-ribbon" viewBox="0 0 1440 600" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <svg class="benefits-guilloche-ribbon" viewBox="0 0 1440 600" fill="none" preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <!-- Haz de líneas paralelas onduladas en blanco translúcido -->
-        <path d="M -100 120 C 350 -40, 750 380, 1540 160" stroke="#ffffff" stroke-width="1.3" opacity="0.65"/>
-        <path d="M -100 135 C 350 -25, 750 395, 1540 175" stroke="#ffffff" stroke-width="1.1" opacity="0.55"/>
-        <path d="M -100 150 C 350 -10, 750 410, 1540 190" stroke="#ffffff" stroke-width="1.0" opacity="0.48"/>
-        <path d="M -100 165 C 350 5, 750 425, 1540 205" stroke="#ffffff" stroke-width="0.9" opacity="0.42"/>
-        <path d="M -100 180 C 350 20, 750 440, 1540 220" stroke="#ffffff" stroke-width="0.8" opacity="0.36"/>
-        <path d="M -100 195 C 350 35, 750 455, 1540 235" stroke="#ffffff" stroke-width="0.7" opacity="0.30"/>
-        
+        <path d="M -100 120 C 350 -40, 750 380, 1540 160" stroke="#ffffff" stroke-width="1.3" opacity="0.65" />
+        <path d="M -100 135 C 350 -25, 750 395, 1540 175" stroke="#ffffff" stroke-width="1.1" opacity="0.55" />
+        <path d="M -100 150 C 350 -10, 750 410, 1540 190" stroke="#ffffff" stroke-width="1.0" opacity="0.48" />
+        <path d="M -100 165 C 350 5, 750 425, 1540 205" stroke="#ffffff" stroke-width="0.9" opacity="0.42" />
+        <path d="M -100 180 C 350 20, 750 440, 1540 220" stroke="#ffffff" stroke-width="0.8" opacity="0.36" />
+        <path d="M -100 195 C 350 35, 750 455, 1540 235" stroke="#ffffff" stroke-width="0.7" opacity="0.30" />
+
         <!-- Segunda cinta de líneas finas cruzadas -->
-        <path d="M -80 380 C 420 180, 920 540, 1540 320" stroke="#ffffff" stroke-width="1.2" opacity="0.45"/>
-        <path d="M -80 395 C 420 195, 920 555, 1540 335" stroke="#ffffff" stroke-width="1.0" opacity="0.38"/>
-        <path d="M -80 410 C 420 210, 920 570, 1540 350" stroke="#ffffff" stroke-width="0.8" opacity="0.30"/>
+        <path d="M -80 380 C 420 180, 920 540, 1540 320" stroke="#ffffff" stroke-width="1.2" opacity="0.45" />
+        <path d="M -80 395 C 420 195, 920 555, 1540 335" stroke="#ffffff" stroke-width="1.0" opacity="0.38" />
+        <path d="M -80 410 C 420 210, 920 570, 1540 350" stroke="#ffffff" stroke-width="0.8" opacity="0.30" />
       </svg>
 
       <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-20">
         <!-- Grid: 3 cajas en la fila superior + 2 cajas en la fila inferior centradas -->
         <div class="grid grid-cols-1 md:grid-cols-6 gap-6 sm:gap-7 max-w-6xl mx-auto">
-          
+
           <!-- Card 1 (Fila 1, Columna 1) -->
           <div class="md:col-span-2 text-center p-6 sm:p-8 rounded-3xl benefits-card-glass flex flex-col items-center">
-            <div class="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5 text-white shadow-md" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+            <div class="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5 text-white shadow-md"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
               </svg>
             </div>
             <h3 class="font-bold text-brand-dark text-lg mb-2">Protocolo Estructurado</h3>
-            <p class="text-xs sm:text-sm text-brand-dark/75 leading-relaxed font-normal">Sistema progresivo en 4 fases de restauración biológica</p>
+            <p class="text-xs sm:text-sm text-brand-dark/75 leading-relaxed font-normal">Sistema progresivo en 4 fases
+              de restauración biológica</p>
           </div>
 
           <!-- Card 2 (Fila 1, Columna 2) -->
           <div class="md:col-span-2 text-center p-6 sm:p-8 rounded-3xl benefits-card-glass flex flex-col items-center">
-            <div class="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5 text-white shadow-md" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+            <div class="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5 text-white shadow-md"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
             <h3 class="font-bold text-brand-dark text-lg mb-2">Acompañamiento Real</h3>
-            <p class="text-xs sm:text-sm text-brand-dark/75 leading-relaxed font-normal">Seguimiento personalizado 1 a 1 vía WhatsApp</p>
+            <p class="text-xs sm:text-sm text-brand-dark/75 leading-relaxed font-normal">Seguimiento personalizado 1 a 1
+              vía WhatsApp</p>
           </div>
 
           <!-- Card 3 (Fila 1, Columna 3) -->
           <div class="md:col-span-2 text-center p-6 sm:p-8 rounded-3xl benefits-card-glass flex flex-col items-center">
-            <div class="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5 text-white shadow-md" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+            <div class="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5 text-white shadow-md"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
             <h3 class="font-bold text-brand-dark text-lg mb-2">100% Botánico</h3>
-            <p class="text-xs sm:text-sm text-brand-dark/75 leading-relaxed font-normal">Sin azúcar añadida, químicos ni conservantes artificiales</p>
+            <p class="text-xs sm:text-sm text-brand-dark/75 leading-relaxed font-normal">Sin azúcar añadida, químicos ni
+              conservantes artificiales</p>
           </div>
 
           <!-- Card 4 (Fila 2, Columna 1 centrada: md:col-start-2) -->
-          <div class="md:col-start-2 md:col-span-2 text-center p-6 sm:p-8 rounded-3xl benefits-card-glass flex flex-col items-center">
-            <div class="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5 text-white shadow-md" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+          <div
+            class="md:col-start-2 md:col-span-2 text-center p-6 sm:p-8 rounded-3xl benefits-card-glass flex flex-col items-center">
+            <div class="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5 text-white shadow-md"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
             <h3 class="font-bold text-brand-dark text-lg mb-2">Enfoque Preventivo</h3>
-            <p class="text-xs sm:text-sm text-brand-dark/75 leading-relaxed font-normal">Restaura la causa raíz, no disfraza síntomas</p>
+            <p class="text-xs sm:text-sm text-brand-dark/75 leading-relaxed font-normal">Restaura la causa raíz, no
+              disfraza síntomas</p>
           </div>
 
           <!-- Card 5 (Fila 2, Columna 2 centrada) -->
           <div class="md:col-span-2 text-center p-6 sm:p-8 rounded-3xl benefits-card-glass flex flex-col items-center">
-            <div class="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5 text-white shadow-md" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+            <div class="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-5 text-white shadow-md"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
               </svg>
             </div>
             <h3 class="font-bold text-brand-dark text-lg mb-2">Resultados Notorios</h3>
-            <p class="text-xs sm:text-sm text-brand-dark/75 leading-relaxed font-normal">Mayor ligereza, digestión ágil y vitalidad desde la fase 1</p>
+            <p class="text-xs sm:text-sm text-brand-dark/75 leading-relaxed font-normal">Mayor ligereza, digestión ágil
+              y vitalidad desde la fase 1</p>
           </div>
 
         </div>
@@ -445,64 +537,84 @@
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Fase 1 -->
-          <div class="text-center bg-canvas-light p-8 rounded-3xl border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 shadow-sm hover:shadow-lg flex flex-col justify-between">
+          <div
+            class="text-center bg-canvas-light p-8 rounded-3xl border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 shadow-sm hover:shadow-lg flex flex-col justify-between">
             <div>
-              <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-2xl font-bold" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+              <div
+                class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-2xl font-bold"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
                 1
               </div>
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-2">Limpieza Intestinal</h3>
-              <p class="text-sm text-brand-muted mb-4 leading-relaxed">Remueve toxinas retenidas, combate el estreñimiento y desinflama las paredes del colon.</p>
+              <p class="text-sm text-brand-muted mb-4 leading-relaxed">Remueve toxinas retenidas, combate el
+                estreñimiento y desinflama las paredes del colon.</p>
             </div>
             <div>
-              <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold text-white shadow-sm" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+              <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold text-white shadow-sm"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
                 Prunex 1
               </span>
             </div>
           </div>
 
           <!-- Fase 2 -->
-          <div class="text-center bg-canvas-light p-8 rounded-3xl border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 shadow-sm hover:shadow-lg flex flex-col justify-between">
+          <div
+            class="text-center bg-canvas-light p-8 rounded-3xl border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 shadow-sm hover:shadow-lg flex flex-col justify-between">
             <div>
-              <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-2xl font-bold" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+              <div
+                class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-2xl font-bold"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
                 2
               </div>
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-2">Flora Intestinal</h3>
-              <p class="text-sm text-brand-muted mb-4 leading-relaxed">Repuebla tu microbiota con 10 mil millones de probióticos activos por toma y fibra prebiótica.</p>
+              <p class="text-sm text-brand-muted mb-4 leading-relaxed">Repuebla tu microbiota con 10 mil millones de
+                probióticos activos por toma y fibra prebiótica.</p>
             </div>
             <div>
-              <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold text-white shadow-sm" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+              <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold text-white shadow-sm"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
                 Flora Liv
               </span>
             </div>
           </div>
 
           <!-- Fase 3 -->
-          <div class="text-center bg-canvas-light p-8 rounded-3xl border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 shadow-sm hover:shadow-lg flex flex-col justify-between">
+          <div
+            class="text-center bg-canvas-light p-8 rounded-3xl border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 shadow-sm hover:shadow-lg flex flex-col justify-between">
             <div>
-              <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-2xl font-bold" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+              <div
+                class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-2xl font-bold"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
                 3
               </div>
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-2">Detox Hepático</h3>
-              <p class="text-sm text-brand-muted mb-4 leading-relaxed">Protege y revitaliza las funciones del hígado, eliminando toxinas pesadas y grasa acumulada.</p>
+              <p class="text-sm text-brand-muted mb-4 leading-relaxed">Protege y revitaliza las funciones del hígado,
+                eliminando toxinas pesadas y grasa acumulada.</p>
             </div>
             <div>
-              <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold text-white shadow-sm" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+              <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold text-white shadow-sm"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
                 Rexet
               </span>
             </div>
           </div>
 
           <!-- Fase 4 -->
-          <div class="text-center bg-canvas-light p-8 rounded-3xl border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 shadow-sm hover:shadow-lg flex flex-col justify-between">
+          <div
+            class="text-center bg-canvas-light p-8 rounded-3xl border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 shadow-sm hover:shadow-lg flex flex-col justify-between">
             <div>
-              <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-2xl font-bold" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+              <div
+                class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-2xl font-bold"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
                 4
               </div>
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-2">Energía &amp; Vitalidad</h3>
-              <p class="text-sm text-brand-muted mb-4 leading-relaxed">Activa la producción de energía celular limpia sin azúcar, sin picos y con inmunidad reforzada.</p>
+              <p class="text-sm text-brand-muted mb-4 leading-relaxed">Activa la producción de energía celular limpia
+                sin azúcar, sin picos y con inmunidad reforzada.</p>
             </div>
             <div>
-              <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold text-white shadow-sm" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+              <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold text-white shadow-sm"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
                 Vita Xtra T+
               </span>
             </div>
@@ -513,13 +625,14 @@
 
     <!-- 7. ZIGZAG DE CIENCIA + PROTOCOLO -->
     <section class="py-20 lg:py-28 science-section-bg relative overflow-hidden">
-      
+
       <!-- Fondo geométrico sutil recreado del estilo adjuntado con opacidad clara -->
       <div class="science-bg-canvas" aria-hidden="true">
         <div class="science-bg-img"></div>
-        
+
         <!-- Trazos vectoriales geométricos en abanico (Wireframe Ribbon) -->
-        <svg class="science-vector-grid" viewBox="0 0 1440 1000" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="science-vector-grid" viewBox="0 0 1440 1000" fill="none" preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg">
           <!-- Haz de líneas en abanico parabólico superior derecho -->
           <g stroke="#4A835A" stroke-width="0.8" opacity="0.35">
             <line x1="600" y1="0" x2="1440" y2="400" />
@@ -568,42 +681,55 @@
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
           <div class="relative flex items-center justify-center">
             <div class="w-full aspect-square max-w-md rounded-3xl overflow-hidden shadow-xl bg-white p-2">
-              <img src="img/benefits/sueno-profundo.png" alt="Sueño profundo reparador" class="w-full h-full object-cover rounded-2xl zigzag-image">
+              <img src="img/benefits/sueno-profundo.png" alt="Sueño profundo reparador"
+                class="w-full h-full object-cover rounded-2xl zigzag-image">
             </div>
             <div class="absolute -bottom-6 -right-6 w-36 h-36 rounded-full blur-2xl -z-10 bg-emerald-400/25"></div>
           </div>
-          
+
           <div class="lg:pl-6">
             <div class="pill-badge mb-4">La Raíz del Problema</div>
             <h3 class="font-serif text-3xl md:text-4xl text-brand-dark mb-6 leading-tight font-bold">
               No es insomnio. Es saturación del hígado y del colon.
             </h3>
             <p class="text-base sm:text-lg text-brand-muted leading-relaxed mb-8">
-              Tu hígado sobrecargado y una microbiota intestinal desequilibrada impiden que tu sistema nervioso entre en fase de recuperación profunda. Por eso despiertas exhausta aunque hayas dormido toda la noche.
+              Tu hígado sobrecargado y una microbiota intestinal desequilibrada impiden que tu sistema nervioso entre en
+              fase de recuperación profunda. Por eso despiertas exhausta aunque hayas dormido toda la noche.
             </p>
             <div class="space-y-4 mb-8">
               <div class="flex items-center gap-4">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white"
+                  style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
                 <h4 class="font-bold text-brand-dark">Regulación del ritmo circadiano y descanso profundo</h4>
               </div>
               <div class="flex items-center gap-4">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white"
+                  style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
                 <h4 class="font-bold text-brand-dark">Desinflamación hepática y digestiva progresiva</h4>
               </div>
               <div class="flex items-center gap-4">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white"
+                  style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
                 <h4 class="font-bold text-brand-dark">Eliminación de la ansiedad nocturna y el cortisol</h4>
               </div>
             </div>
             <a href="#productos" class="btn-primary">
               <span>Ver Bebidas Nutracéuticas</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </a>
           </div>
         </div>
@@ -617,38 +743,52 @@
               Recupera la claridad, la vitalidad y el control de tu cuerpo
             </h3>
             <p class="text-base sm:text-lg text-brand-muted leading-relaxed mb-8">
-              Al descongestionar tus filtros y nutrir tus células con biotecnología limpia, todo se equilibra: duermes de corrido, la digestión se vuelve ligera y disfrutas de energía limpia durante todo el día sin necesidad de cafeína en exceso.
+              Al descongestionar tus filtros y nutrir tus células con biotecnología limpia, todo se equilibra: duermes
+              de corrido, la digestión se vuelve ligera y disfrutas de energía limpia durante todo el día sin necesidad
+              de cafeína en exceso.
             </p>
             <div class="space-y-4 mb-8">
               <div class="flex items-center gap-4">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white"
+                  style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
                 <h4 class="font-bold text-brand-dark">Energía sostenida sin taquicardias ni bajones</h4>
               </div>
               <div class="flex items-center gap-4">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white"
+                  style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
                 <h4 class="font-bold text-brand-dark">Evacuación regular y vientre plano sin irritación</h4>
               </div>
               <div class="flex items-center gap-4">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 text-white"
+                  style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
                 </div>
                 <h4 class="font-bold text-brand-dark">Claridad mental y enfoque desde primera hora</h4>
               </div>
             </div>
             <a href="#quiz" class="btn-primary">
               <span>Hacer Test Diagnóstico</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </a>
           </div>
 
           <!-- Columna Imagen (Lado Derecho) -->
           <div class="relative flex items-center justify-center">
             <div class="w-full aspect-square max-w-md rounded-3xl overflow-hidden shadow-xl bg-white p-2">
-              <img src="img/maire5.jpg" alt="Yojandry Nava - Recupera la claridad, vitalidad y control" class="w-full h-full object-cover rounded-2xl zigzag-image">
+              <img src="img/maire5.jpg" alt="Yojandry Nava - Recupera la claridad, vitalidad y control"
+                class="w-full h-full object-cover rounded-2xl zigzag-image">
             </div>
             <div class="absolute -top-6 -right-6 w-36 h-36 rounded-full blur-2xl -z-10 bg-emerald-300/30"></div>
           </div>
@@ -673,19 +813,27 @@
           <!-- Prunex 1 -->
           <div class="product-card">
             <div class="product-card-image">
-              <span class="product-card-badge" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Limpieza</span>
+              <span class="product-card-badge"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Limpieza</span>
               <img src="img/products/prunex.jpg" alt="Prunex 1">
               <button onclick="addToCart('prunex')" class="product-add-btn" aria-label="Agregar Prunex 1 al carrito">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
               </button>
             </div>
             <div class="product-card-content">
-              <p class="text-xs text-brand-forest font-bold uppercase tracking-wider mb-1">Fase 1: Limpieza Intestinal</p>
+              <p class="text-xs text-brand-forest font-bold uppercase tracking-wider mb-1">Fase 1: Limpieza Intestinal
+              </p>
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-1">Prunex 1</h3>
-              <p class="text-sm text-brand-muted mb-4 line-clamp-2">Limpia el colon y combate el estreñimiento de forma natural. Con ciruela y linaza.</p>
+              <p class="text-sm text-brand-muted mb-4 line-clamp-2">Limpia el colon y combate el estreñimiento de forma
+                natural. Con ciruela y linaza.</p>
               <div class="mt-auto flex items-baseline justify-between pt-3 border-t border-brand-dark/5">
-                <p class="font-bold text-brand-dark text-xl">$138.100 <span class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
-                <button onclick="addToCart('prunex')" class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
+                <p class="font-bold text-brand-dark text-xl">$138.100 <span
+                    class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
+                <button onclick="addToCart('prunex')"
+                  class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
+                  style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
               </div>
             </div>
           </div>
@@ -693,19 +841,26 @@
           <!-- Flora Liv -->
           <div class="product-card">
             <div class="product-card-image">
-              <span class="product-card-badge" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Probióticos</span>
+              <span class="product-card-badge"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Probióticos</span>
               <img src="img/products/floraliv.jpg" alt="Flora Liv">
               <button onclick="addToCart('floraliv')" class="product-add-btn" aria-label="Agregar Flora Liv al carrito">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
               </button>
             </div>
             <div class="product-card-content">
               <p class="text-xs text-brand-forest font-bold uppercase tracking-wider mb-1">Fase 2: Flora Intestinal</p>
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-1">Flora Liv</h3>
-              <p class="text-sm text-brand-muted mb-4 line-clamp-2">Regenera la microbiota. Más de 10 mil millones de probióticos vivos por toma.</p>
+              <p class="text-sm text-brand-muted mb-4 line-clamp-2">Regenera la microbiota. Más de 10 mil millones de
+                probióticos vivos por toma.</p>
               <div class="mt-auto flex items-baseline justify-between pt-3 border-t border-brand-dark/5">
-                <p class="font-bold text-brand-dark text-xl">$165.400 <span class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
-                <button onclick="addToCart('floraliv')" class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
+                <p class="font-bold text-brand-dark text-xl">$165.400 <span
+                    class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
+                <button onclick="addToCart('floraliv')"
+                  class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
+                  style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
               </div>
             </div>
           </div>
@@ -713,19 +868,26 @@
           <!-- Rexet -->
           <div class="product-card">
             <div class="product-card-image">
-              <span class="product-card-badge" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Detox Hepático</span>
+              <span class="product-card-badge"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Detox Hepático</span>
               <img src="img/products/rexet.jpg" alt="Rexet">
               <button onclick="addToCart('rexet')" class="product-add-btn" aria-label="Agregar Rexet al carrito">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
               </button>
             </div>
             <div class="product-card-content">
               <p class="text-xs text-brand-forest font-bold uppercase tracking-wider mb-1">Fase 3: Detox Hepático</p>
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-1">Rexet</h3>
-              <p class="text-sm text-brand-muted mb-4 line-clamp-2">Protege y desintoxica tu hígado. Bebida efervescente con extracto de alcachofa y boldo.</p>
+              <p class="text-sm text-brand-muted mb-4 line-clamp-2">Protege y desintoxica tu hígado. Bebida efervescente
+                con extracto de alcachofa y boldo.</p>
               <div class="mt-auto flex items-baseline justify-between pt-3 border-t border-brand-dark/5">
-                <p class="font-bold text-brand-dark text-xl">$138.100 <span class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
-                <button onclick="addToCart('rexet')" class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
+                <p class="font-bold text-brand-dark text-xl">$138.100 <span
+                    class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
+                <button onclick="addToCart('rexet')"
+                  class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
+                  style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
               </div>
             </div>
           </div>
@@ -733,28 +895,38 @@
           <!-- Vita Xtra T+ -->
           <div class="product-card">
             <div class="product-card-image">
-              <span class="product-card-badge" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Energía</span>
+              <span class="product-card-badge"
+                style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Energía</span>
               <img src="img/products/vitta.jpg" alt="Vita Xtra T+">
               <button onclick="addToCart('vitta')" class="product-add-btn" aria-label="Agregar Vita Xtra T+ al carrito">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
               </button>
             </div>
             <div class="product-card-content">
-              <p class="text-xs text-brand-forest font-bold uppercase tracking-wider mb-1">Fase 4: Energía y Vitalidad</p>
+              <p class="text-xs text-brand-forest font-bold uppercase tracking-wider mb-1">Fase 4: Energía y Vitalidad
+              </p>
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-1">Vita Xtra T+</h3>
-              <p class="text-sm text-brand-muted mb-4 line-clamp-2">Energía celular sostenida con maíz morado, maca, ginseng y guayusa. Sin azúcar.</p>
+              <p class="text-sm text-brand-muted mb-4 line-clamp-2">Energía celular sostenida con maíz morado, maca,
+                ginseng y guayusa. Sin azúcar.</p>
               <div class="mt-auto flex items-baseline justify-between pt-3 border-t border-brand-dark/5">
-                <p class="font-bold text-brand-dark text-xl">$138.100 <span class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
-                <button onclick="addToCart('vitta')" class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
+                <p class="font-bold text-brand-dark text-xl">$138.100 <span
+                    class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
+                <button onclick="addToCart('vitta')"
+                  class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
+                  style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
               </div>
             </div>
           </div>
         </div>
 
         <div class="flex flex-wrap gap-4 justify-center items-center">
-          <a href="https://wa.me/573143096984?text=Hola%20Yojandry%2C%20deseo%20asesoria%20personalizada%20sobre%20las%20bebidas%20nutraceuticas" target="_blank" rel="noopener" class="btn-primary">
+          <a href="https://wa.me/573143096984?text=Hola%20Yojandry%2C%20deseo%20asesoria%20personalizada%20sobre%20las%20bebidas%20nutraceuticas"
+            target="_blank" rel="noopener" class="btn-primary">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
             </svg>
             <span>Asesoría Directa por WhatsApp</span>
           </a>
@@ -764,7 +936,7 @@
 
     <!-- 9. CÓMO EMPEZAR (3 PASOS - CON FONDO BACKGROUND-GREEN SUTIL) -->
     <section class="py-20 lg:py-28 steps-section-bg relative overflow-hidden">
-      
+
       <!-- Fondo sutil de background-green.jpg con opacidad clara -->
       <div class="steps-bg-canvas" aria-hidden="true">
         <div class="steps-bg-img"></div>
@@ -775,20 +947,27 @@
           <span class="pill-badge mb-3">Paso a Paso</span>
           <h2 class="font-serif text-3xl md:text-5xl text-brand-dark font-bold">Cómo empezar tu protocolo</h2>
         </div>
-        
+
         <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <div class="text-center p-8 rounded-3xl bg-white shadow-sm hover:shadow-md border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1">
-            <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-xl font-bold" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+          <div
+            class="text-center p-8 rounded-3xl bg-white shadow-sm hover:shadow-md border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1">
+            <div
+              class="w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-xl font-bold"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               1
             </div>
             <h3 class="font-serif text-xl font-bold text-brand-dark mb-3">Evalúa tus síntomas</h3>
             <p class="text-sm text-brand-muted leading-relaxed">
-              Completa el test interactivo o contáctanos por WhatsApp con tus signos de saturación. Analizamos tu caso sin costo.
+              Completa el test interactivo o contáctanos por WhatsApp con tus signos de saturación. Analizamos tu caso
+              sin costo.
             </p>
           </div>
 
-          <div class="text-center p-8 rounded-3xl bg-white shadow-sm hover:shadow-md border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1">
-            <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-xl font-bold" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+          <div
+            class="text-center p-8 rounded-3xl bg-white shadow-sm hover:shadow-md border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1">
+            <div
+              class="w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-xl font-bold"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               2
             </div>
             <h3 class="font-serif text-xl font-bold text-brand-dark mb-3">Recibe tu protocolo</h3>
@@ -797,8 +976,11 @@
             </p>
           </div>
 
-          <div class="text-center p-8 rounded-3xl bg-white shadow-sm hover:shadow-md border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1">
-            <div class="w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-xl font-bold" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+          <div
+            class="text-center p-8 rounded-3xl bg-white shadow-sm hover:shadow-md border border-brand-dark/5 hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1">
+            <div
+              class="w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-6 shadow-md text-white font-serif text-xl font-bold"
+              style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
               3
             </div>
             <h3 class="font-serif text-xl font-bold text-brand-dark mb-3">Siente la renovación</h3>
@@ -813,53 +995,59 @@
     <!-- 10. QUIZ INTEGRADO (ANIMACIÓN SUTIL DE PUNTOS Y DESTELLOS EN FONDO SÓLIDO #142218) -->
     <section id="quiz" class="py-20 lg:py-28 relative overflow-hidden" style="background: #142218;">
       <!-- Malla notable de ondas de vitalidad biológica en segundo plano -->
-      <svg class="quiz-wave-mesh" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M-100,80 C300,240 500,-20 900,140 C1300,300 1380,40 1540,100" stroke="#87C295" stroke-width="1.8" stroke-dasharray="6 8" opacity="0.45"/>
-        <path d="M-100,240 C340,100 580,360 980,180 C1380,0 1440,260 1540,220" stroke="#C9A265" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.38"/>
-        <path d="M0,160 Q360,260 720,180 T1440,200" stroke="#CDFAE0" stroke-width="1.2" opacity="0.30"/>
+      <svg class="quiz-wave-mesh" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true">
+        <path d="M-100,80 C300,240 500,-20 900,140 C1300,300 1380,40 1540,100" stroke="#87C295" stroke-width="1.8"
+          stroke-dasharray="6 8" opacity="0.45" />
+        <path d="M-100,240 C340,100 580,360 980,180 C1380,0 1440,260 1540,220" stroke="#C9A265" stroke-width="1.5"
+          stroke-dasharray="8 6" opacity="0.38" />
+        <path d="M0,160 Q360,260 720,180 T1440,200" stroke="#CDFAE0" stroke-width="1.2" opacity="0.30" />
       </svg>
 
       <!-- Órbita geométrica celular animada notable - Superior Derecha -->
       <div class="quiz-orbit-container quiz-orbit-top-right" aria-hidden="true">
         <svg class="quiz-rotating-orbit" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="170" cy="170" r="150" stroke="#87C295" stroke-width="1.6" stroke-dasharray="6 8" opacity="0.55"/>
-          <circle cx="170" cy="170" r="110" stroke="#C9A265" stroke-width="1.4" opacity="0.48"/>
-          <circle cx="170" cy="170" r="70" stroke="#CDFAE0" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.50"/>
+          <circle cx="170" cy="170" r="150" stroke="#87C295" stroke-width="1.6" stroke-dasharray="6 8" opacity="0.55" />
+          <circle cx="170" cy="170" r="110" stroke="#C9A265" stroke-width="1.4" opacity="0.48" />
+          <circle cx="170" cy="170" r="70" stroke="#CDFAE0" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.50" />
           <!-- Nodos celulares nítidos -->
-          <circle cx="170" cy="20" r="5" fill="#87C295" opacity="0.85"/>
-          <circle cx="280" cy="170" r="4.5" fill="#C9A265" opacity="0.85"/>
-          <circle cx="95" cy="220" r="4" fill="#CDFAE0" opacity="0.90"/>
-          <circle cx="170" cy="170" r="7" fill="#ffffff" opacity="0.35"/>
+          <circle cx="170" cy="20" r="5" fill="#87C295" opacity="0.85" />
+          <circle cx="280" cy="170" r="4.5" fill="#C9A265" opacity="0.85" />
+          <circle cx="95" cy="220" r="4" fill="#CDFAE0" opacity="0.90" />
+          <circle cx="170" cy="170" r="7" fill="#ffffff" opacity="0.35" />
         </svg>
       </div>
 
       <!-- Órbita geométrica celular animada notable - Inferior Izquierda -->
       <div class="quiz-orbit-container quiz-orbit-bottom-left" aria-hidden="true">
         <svg class="quiz-rotating-orbit-reverse" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="150" cy="150" r="130" stroke="#C9A265" stroke-width="1.6" stroke-dasharray="8 6" opacity="0.50"/>
-          <circle cx="150" cy="150" r="95" stroke="#87C295" stroke-width="1.4" opacity="0.48"/>
-          <circle cx="150" cy="150" r="60" stroke="#ffffff" stroke-width="1.1" stroke-dasharray="5 7" opacity="0.40"/>
+          <circle cx="150" cy="150" r="130" stroke="#C9A265" stroke-width="1.6" stroke-dasharray="8 6" opacity="0.50" />
+          <circle cx="150" cy="150" r="95" stroke="#87C295" stroke-width="1.4" opacity="0.48" />
+          <circle cx="150" cy="150" r="60" stroke="#ffffff" stroke-width="1.1" stroke-dasharray="5 7" opacity="0.40" />
           <!-- Nodos celulares -->
-          <circle cx="150" cy="20" r="5" fill="#C9A265" opacity="0.85"/>
-          <circle cx="245" cy="150" r="4.5" fill="#87C295" opacity="0.85"/>
-          <circle cx="85" cy="85" r="4" fill="#CDFAE0" opacity="0.90"/>
+          <circle cx="150" cy="20" r="5" fill="#C9A265" opacity="0.85" />
+          <circle cx="245" cy="150" r="4.5" fill="#87C295" opacity="0.85" />
+          <circle cx="85" cy="85" r="4" fill="#CDFAE0" opacity="0.90" />
         </svg>
       </div>
 
       <!-- Badges notables flotantes en segundo plano (Glassmorphism elegante) -->
       <div class="hidden lg:flex items-center gap-2.5 quiz-floating-badge quiz-badge-top-left" aria-hidden="true">
-        <span class="w-6 h-6 rounded-full bg-emerald-400/20 border border-emerald-400/40 flex items-center justify-center text-xs">🧪</span>
+        <span
+          class="w-6 h-6 rounded-full bg-emerald-400/20 border border-emerald-400/40 flex items-center justify-center text-xs">🧪</span>
         <span class="text-xs font-semibold tracking-wider uppercase text-emerald-200">Test Clínico — 3 min</span>
       </div>
       <div class="hidden lg:flex items-center gap-2.5 quiz-floating-badge quiz-badge-bottom-right" aria-hidden="true">
-        <span class="w-6 h-6 rounded-full bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-xs">🔬</span>
+        <span
+          class="w-6 h-6 rounded-full bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-xs">🔬</span>
         <span class="text-xs font-semibold tracking-wider uppercase text-amber-200">Nivel de Sobrecarga</span>
       </div>
       <div class="max-w-3xl mx-auto px-6 lg:px-8 relative z-20">
-        
+
         <!-- Encabezado del Quiz -->
         <div class="text-center mb-12" id="quiz-header">
-          <span class="text-brand-forest-glow text-xs font-bold uppercase tracking-[0.2em] mb-4 block">Test Diagnóstico — 3 minutos</span>
+          <span class="text-brand-forest-glow text-xs font-bold uppercase tracking-[0.2em] mb-4 block">Test Diagnóstico
+            — 3 minutos</span>
           <h2 class="font-serif text-3xl md:text-5xl text-white mb-4 font-bold">
             ¿Tu cansancio es edad o<br>
             <span class="text-brand-gold-light">Cuerpo Saturado?</span>
@@ -885,13 +1073,17 @@
 
         <!-- Resultados del Quiz (oculto inicialmente) -->
         <div id="quiz-results" class="hidden">
-          <div class="rounded-3xl p-8 md:p-10 backdrop-blur-md" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14);">
+          <div class="rounded-3xl p-8 md:p-10 backdrop-blur-md"
+            style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14);">
             <div class="text-center mb-8">
-              <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4 shadow-lg" id="result-icon-wrap" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+              <div class="w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4 shadow-lg"
+                id="result-icon-wrap" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
                 <span class="font-serif text-3xl font-bold text-white" id="result-level">2</span>
               </div>
-              <h3 class="font-serif text-2xl md:text-3xl text-white mb-2 font-bold" id="result-title">Saturación Acumulada</h3>
-              <p class="text-sm md:text-base text-white/70" id="result-subtitle">Tu cuerpo muestra señales claras de sobrecarga metabólica.</p>
+              <h3 class="font-serif text-2xl md:text-3xl text-white mb-2 font-bold" id="result-title">Saturación
+                Acumulada</h3>
+              <p class="text-sm md:text-base text-white/70" id="result-subtitle">Tu cuerpo muestra señales claras de
+                sobrecarga metabólica.</p>
             </div>
 
             <!-- Barras de Nivel por Dimensión -->
@@ -903,7 +1095,10 @@
               </p>
               <div class="flex flex-wrap gap-4 justify-center">
                 <a id="quiz-wa-btn" href="#" target="_blank" rel="noopener" class="btn-primary">
-                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                  </svg>
                   <span>Enviar por WhatsApp</span>
                 </a>
                 <button onclick="resetQuiz()" class="btn-outline-white">
@@ -918,23 +1113,26 @@
     </section>
 
 
-        <!-- 12. TESTIMONIOS (FONDO BLANCO) -->
+    <!-- 12. TESTIMONIOS (FONDO BLANCO) -->
     <section id="testimonios" class="py-20 lg:py-28 bg-white border-t border-brand-dark/5">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="max-w-3xl mx-auto text-center mb-16">
           <span class="pill-badge mb-3">Testimonios de resultados reales</span>
-          <h2 class="font-serif text-3xl md:text-5xl text-brand-dark font-bold">Ellas ya salieron del Cuerpo Saturado</h2>
+          <h2 class="font-serif text-3xl md:text-5xl text-brand-dark font-bold">Ellas ya salieron del Cuerpo Saturado
+          </h2>
           <p class="text-brand-muted mt-3">Experiencias de mujeres que recuperaron su ritmo biológico natural.</p>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-canvas-light rounded-2xl p-7 border border-brand-dark/5 shadow-sm hover:shadow-md hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div
+            class="bg-canvas-light rounded-2xl p-7 border border-brand-dark/5 shadow-sm hover:shadow-md hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
             <div>
               <div class="flex gap-1 mb-4 text-amber-500">
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
               </div>
               <p class="text-brand-muted text-sm leading-relaxed mb-6 italic">
-                "Llevaba años despertando cansada pensando que era el estrés laboral. A las 2 semanas con Prunex y Flora Liv, dormí corrido por primera vez en meses."
+                "Llevaba años despertando cansada pensando que era el estrés laboral. A las 2 semanas con Prunex y Flora
+                Liv, dormí corrido por primera vez en meses."
               </p>
             </div>
             <div>
@@ -943,13 +1141,15 @@
             </div>
           </div>
 
-          <div class="bg-canvas-light rounded-2xl p-7 border border-brand-dark/5 shadow-sm hover:shadow-md hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div
+            class="bg-canvas-light rounded-2xl p-7 border border-brand-dark/5 shadow-sm hover:shadow-md hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
             <div>
               <div class="flex gap-1 mb-4 text-amber-500">
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
               </div>
               <p class="text-brand-muted text-sm leading-relaxed mb-6 italic">
-                "Pensé que ya era cuestión de la edad después de los 40. Resulta que estaba completamente saturada de toxinas. Yojandry me explicó con paciencia y sin presiones."
+                "Pensé que ya era cuestión de la edad después de los 40. Resulta que estaba completamente saturada de
+                toxinas. Yojandry me explicó con paciencia y sin presiones."
               </p>
             </div>
             <div>
@@ -958,13 +1158,15 @@
             </div>
           </div>
 
-          <div class="bg-canvas-light rounded-2xl p-7 border border-brand-dark/5 shadow-sm hover:shadow-md hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div
+            class="bg-canvas-light rounded-2xl p-7 border border-brand-dark/5 shadow-sm hover:shadow-md hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
             <div>
               <div class="flex gap-1 mb-4 text-amber-500">
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
               </div>
               <p class="text-brand-muted text-sm leading-relaxed mb-6 italic">
-                "Lo que verdaderamente me convenció fue el acompañamiento diario. No fue comprar una caja y quedar sola. Me guió con las tomas y los cambios fueron inmediatos."
+                "Lo que verdaderamente me convenció fue el acompañamiento diario. No fue comprar una caja y quedar sola.
+                Me guió con las tomas y los cambios fueron inmediatos."
               </p>
             </div>
             <div>
@@ -973,13 +1175,15 @@
             </div>
           </div>
 
-          <div class="bg-canvas-light rounded-2xl p-7 border border-brand-dark/5 shadow-sm hover:shadow-md hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
+          <div
+            class="bg-canvas-light rounded-2xl p-7 border border-brand-dark/5 shadow-sm hover:shadow-md hover:border-brand-forest/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between">
             <div>
               <div class="flex gap-1 mb-4 text-amber-500">
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
               </div>
               <p class="text-brand-muted text-sm leading-relaxed mb-6 italic">
-                "Dejé de necesitar 4 tazas de café para poder trabajar en las tardes. Con el Vita Xtra T+ la energía es limpia, sin acidez ni taquicardias."
+                "Dejé de necesitar 4 tazas de café para poder trabajar en las tardes. Con el Vita Xtra T+ la energía es
+                limpia, sin acidez ni taquicardias."
               </p>
             </div>
             <div>
@@ -991,9 +1195,9 @@
       </div>
     </section>
 
-        <!-- 13. FAQ (CON BACKGROUND OVERLAY DE BACKGROUND-GREEN-DOTS) -->
+    <!-- 13. FAQ (CON BACKGROUND OVERLAY DE BACKGROUND-GREEN-DOTS) -->
     <section id="faq" class="py-20 lg:py-28 faq-section-bg relative overflow-hidden">
-      
+
       <!-- Fondo con background overlay de background-green-dots.jpg -->
       <div class="faq-bg-canvas" aria-hidden="true">
         <div class="faq-bg-img"></div>
@@ -1010,70 +1214,84 @@
       </div>
     </section>
 
-        <!-- 14. CTA FINAL (CON ELEMENTOS GRÁFICOS LLAMATIVOS EN SEGUNDO PLANO) -->
-    <section class="py-20 lg:py-32 text-center relative overflow-hidden" style="background: linear-gradient(135deg, #2D583B 0%, #1A3824 50%, #102416 100%);">
-      
+    <!-- 14. CTA FINAL (CON ELEMENTOS GRÁFICOS LLAMATIVOS EN SEGUNDO PLANO) -->
+    <section class="py-20 lg:py-32 text-center relative overflow-hidden"
+      style="background: linear-gradient(135deg, #2D583B 0%, #1A3824 50%, #102416 100%);">
+
       <!-- Resplandor central de energía bio-celular -->
       <div class="cta-ambient-burst" aria-hidden="true"></div>
 
       <!-- Ondas dinámicas de vitalidad en vector SVG -->
-      <svg class="cta-wave-mesh" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M-100,160 C320,300 420,-40 820,180 C1220,380 1340,60 1540,160" stroke="#87C295" stroke-width="1.8" stroke-dasharray="8 6" opacity="0.35"/>
-        <path d="M-100,200 C280,60 520,340 920,120 C1320,-80 1420,240 1540,200" stroke="#C9A265" stroke-width="1.5" stroke-opacity="0.3"/>
-        <path d="M0,260 Q360,180 720,240 T1440,220" stroke="#CDFAE0" stroke-width="1" opacity="0.2"/>
+      <svg class="cta-wave-mesh" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true">
+        <path d="M-100,160 C320,300 420,-40 820,180 C1220,380 1340,60 1540,160" stroke="#87C295" stroke-width="1.8"
+          stroke-dasharray="8 6" opacity="0.35" />
+        <path d="M-100,200 C280,60 520,340 920,120 C1320,-80 1420,240 1540,200" stroke="#C9A265" stroke-width="1.5"
+          stroke-opacity="0.3" />
+        <path d="M0,260 Q360,180 720,240 T1440,220" stroke="#CDFAE0" stroke-width="1" opacity="0.2" />
       </svg>
 
       <!-- Órbita geométrica celular animada - Izquierda -->
       <div class="cta-orbit-container cta-orbit-left" aria-hidden="true">
         <svg class="cta-rotating-orbit" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="160" cy="160" r="140" stroke="#87C295" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.35"/>
-          <circle cx="160" cy="160" r="105" stroke="#C9A265" stroke-width="1.2" opacity="0.4"/>
-          <circle cx="160" cy="160" r="70" stroke="#CDFAE0" stroke-width="1" stroke-dasharray="4 6" opacity="0.45"/>
+          <circle cx="160" cy="160" r="140" stroke="#87C295" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.35" />
+          <circle cx="160" cy="160" r="105" stroke="#C9A265" stroke-width="1.2" opacity="0.4" />
+          <circle cx="160" cy="160" r="70" stroke="#CDFAE0" stroke-width="1" stroke-dasharray="4 6" opacity="0.45" />
           <!-- Nodos celulares en la órbita -->
-          <circle cx="160" cy="20" r="5" fill="#87C295" opacity="0.8"/>
-          <circle cx="265" cy="160" r="4" fill="#C9A265" opacity="0.8"/>
-          <circle cx="90" cy="210" r="3.5" fill="#CDFAE0" opacity="0.9"/>
-          <circle cx="160" cy="160" r="8" fill="#ffffff" opacity="0.2"/>
+          <circle cx="160" cy="20" r="5" fill="#87C295" opacity="0.8" />
+          <circle cx="265" cy="160" r="4" fill="#C9A265" opacity="0.8" />
+          <circle cx="90" cy="210" r="3.5" fill="#CDFAE0" opacity="0.9" />
+          <circle cx="160" cy="160" r="8" fill="#ffffff" opacity="0.2" />
         </svg>
       </div>
 
       <!-- Órbita geométrica celular animada - Derecha -->
       <div class="cta-orbit-container cta-orbit-right" aria-hidden="true">
         <svg class="cta-rotating-orbit-reverse" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="180" cy="180" r="160" stroke="#C9A265" stroke-width="1.5" stroke-dasharray="10 8" opacity="0.35"/>
-          <circle cx="180" cy="180" r="120" stroke="#87C295" stroke-width="1.2" opacity="0.4"/>
-          <circle cx="180" cy="180" r="80" stroke="#ffffff" stroke-width="1" stroke-dasharray="5 7" opacity="0.3"/>
+          <circle cx="180" cy="180" r="160" stroke="#C9A265" stroke-width="1.5" stroke-dasharray="10 8"
+            opacity="0.35" />
+          <circle cx="180" cy="180" r="120" stroke="#87C295" stroke-width="1.2" opacity="0.4" />
+          <circle cx="180" cy="180" r="80" stroke="#ffffff" stroke-width="1" stroke-dasharray="5 7" opacity="0.3" />
           <!-- Nodos celulares -->
-          <circle cx="180" cy="20" r="6" fill="#C9A265" opacity="0.85"/>
-          <circle cx="300" cy="180" r="4.5" fill="#87C295" opacity="0.85"/>
-          <circle cx="100" cy="100" r="4" fill="#CDFAE0" opacity="0.9"/>
-          <circle cx="240" cy="240" r="3" fill="#ffffff" opacity="0.8"/>
+          <circle cx="180" cy="20" r="6" fill="#C9A265" opacity="0.85" />
+          <circle cx="300" cy="180" r="4.5" fill="#87C295" opacity="0.85" />
+          <circle cx="100" cy="100" r="4" fill="#CDFAE0" opacity="0.9" />
+          <circle cx="240" cy="240" r="3" fill="#ffffff" opacity="0.8" />
         </svg>
       </div>
 
       <!-- Destellos de energía brillante flotantes -->
       <div class="cta-sparkles-wrap" aria-hidden="true">
-        <svg class="cta-star-sparkle" style="top: 15%; left: 12%; width: 20px; height: 20px; animation-duration: 4s;" viewBox="0 0 24 24" fill="none">
-          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#CDFAE0"/>
+        <svg class="cta-star-sparkle" style="top: 15%; left: 12%; width: 20px; height: 20px; animation-duration: 4s;"
+          viewBox="0 0 24 24" fill="none">
+          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#CDFAE0" />
         </svg>
-        <svg class="cta-star-sparkle" style="top: 25%; right: 14%; width: 24px; height: 24px; animation-duration: 5.2s; animation-delay: -1.5s;" viewBox="0 0 24 24" fill="none">
-          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#E0C58E"/>
+        <svg class="cta-star-sparkle"
+          style="top: 25%; right: 14%; width: 24px; height: 24px; animation-duration: 5.2s; animation-delay: -1.5s;"
+          viewBox="0 0 24 24" fill="none">
+          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#E0C58E" />
         </svg>
-        <svg class="cta-star-sparkle" style="bottom: 22%; left: 18%; width: 16px; height: 16px; animation-duration: 4.6s; animation-delay: -2.3s;" viewBox="0 0 24 24" fill="none">
-          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#ffffff"/>
+        <svg class="cta-star-sparkle"
+          style="bottom: 22%; left: 18%; width: 16px; height: 16px; animation-duration: 4.6s; animation-delay: -2.3s;"
+          viewBox="0 0 24 24" fill="none">
+          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#ffffff" />
         </svg>
-        <svg class="cta-star-sparkle" style="bottom: 18%; right: 16%; width: 22px; height: 22px; animation-duration: 5.8s; animation-delay: -3.1s;" viewBox="0 0 24 24" fill="none">
-          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#87C295"/>
+        <svg class="cta-star-sparkle"
+          style="bottom: 18%; right: 16%; width: 22px; height: 22px; animation-duration: 5.8s; animation-delay: -3.1s;"
+          viewBox="0 0 24 24" fill="none">
+          <path d="M12 0C12 7 7 12 0 12C7 12 12 17 12 24C12 17 17 12 24 12C17 12 12 7 12 0Z" fill="#87C295" />
         </svg>
       </div>
 
       <!-- Badges flotantes ilustrativos en segundo plano (Glassmorphism elegante) -->
       <div class="hidden lg:flex items-center gap-2.5 cta-floating-badge cta-badge-left" aria-hidden="true">
-        <span class="w-7 h-7 rounded-full bg-emerald-400/20 border border-emerald-400/40 flex items-center justify-center text-xs">⚡</span>
+        <span
+          class="w-7 h-7 rounded-full bg-emerald-400/20 border border-emerald-400/40 flex items-center justify-center text-xs">⚡</span>
         <span class="text-xs font-semibold tracking-wider uppercase text-emerald-200">100% Energía Celular</span>
       </div>
       <div class="hidden lg:flex items-center gap-2.5 cta-floating-badge cta-badge-right" aria-hidden="true">
-        <span class="w-7 h-7 rounded-full bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-xs">🌿</span>
+        <span
+          class="w-7 h-7 rounded-full bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-xs">🌿</span>
         <span class="text-xs font-semibold tracking-wider uppercase text-amber-200">Restaura tu Metabolismo</span>
       </div>
 
@@ -1087,7 +1305,9 @@
           Adquiere la certeza de que tu cuerpo volverá a responderte con salud, ligereza y vitalidad natural.
         </p>
         <div class="flex flex-wrap gap-4 justify-center">
-          <a href="https://wa.me/573143096984?text=Hola%20Yojandry%2C%20quiero%20empezar%20el%20Protocolo" target="_blank" rel="noopener" class="btn-primary shadow-xl hover:scale-105 transition-transform duration-300">
+          <a href="https://wa.me/573143096984?text=Hola%20Yojandry%2C%20quiero%20empezar%20el%20Protocolo"
+            target="_blank" rel="noopener"
+            class="btn-primary shadow-xl hover:scale-105 transition-transform duration-300">
             <span>Quiero empezar mi protocolo</span>
           </a>
           <a href="#quiz" class="btn-outline-white hover:bg-white/10 transition-colors">
@@ -1101,14 +1321,15 @@
   <!-- 15. FOOTER -->
   <footer class="py-16 text-white/70" style="background: #102416;">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8 pb-12 border-b border-white/10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8 pb-12 border-b border-white/10">
         <!-- Columna 1: Marca y Embajadora -->
         <div>
           <a href="#" class="font-serif text-3xl text-white mb-4 block tracking-tight no-underline">
             Yojandry<span class="text-brand-forest-glow">.</span>
           </a>
           <p class="text-sm leading-relaxed text-white/60 mb-4">
-            Embajadora independiente FuXion. Protocolo de Restauración Metabólica con bebidas nutracéuticas para mujeres y personas que buscan recuperar su vitalidad celular y salud digestiva.
+            Embajadora independiente FuXion. Protocolo de Restauración Metabólica con bebidas nutracéuticas para mujeres
+            y personas que buscan recuperar su vitalidad celular y salud digestiva.
           </p>
           <p class="text-xs text-white/40">Cúcuta, Norte de Santander — Colombia</p>
         </div>
@@ -1117,11 +1338,21 @@
         <div>
           <h4 class="font-bold text-white mb-4 uppercase tracking-wider text-xs">Navegación</h4>
           <div class="space-y-2.5">
-            <a href="#protocolo" class="block text-sm text-white font-medium hover:text-brand-forest-glow transition-colors footer-nav-link no-underline">El Protocolo en 4 Fases</a>
-            <a href="#productos" class="block text-sm text-white font-medium hover:text-brand-forest-glow transition-colors footer-nav-link no-underline">Catálogo de Bebidas</a>
-            <a href="#quiz" class="block text-sm text-white font-medium hover:text-brand-forest-glow transition-colors footer-nav-link no-underline">Test de Saturación</a>
-            <a href="#testimonios" class="block text-sm text-white font-medium hover:text-brand-forest-glow transition-colors footer-nav-link no-underline">Historias de Éxito</a>
-            <a href="#faq" class="block text-sm text-white font-medium hover:text-brand-forest-glow transition-colors footer-nav-link no-underline">Preguntas Frecuentes</a>
+            <a href="#protocolo"
+              class="block text-sm text-white font-medium hover:text-brand-forest-glow transition-colors footer-nav-link no-underline">El
+              Protocolo en 4 Fases</a>
+            <a href="#productos"
+              class="block text-sm text-white font-medium hover:text-brand-forest-glow transition-colors footer-nav-link no-underline">Catálogo
+              de Bebidas</a>
+            <a href="#quiz"
+              class="block text-sm text-white font-medium hover:text-brand-forest-glow transition-colors footer-nav-link no-underline">Test
+              de Saturación</a>
+            <a href="#testimonios"
+              class="block text-sm text-white font-medium hover:text-brand-forest-glow transition-colors footer-nav-link no-underline">Historias
+              de Éxito</a>
+            <a href="#faq"
+              class="block text-sm text-white font-medium hover:text-brand-forest-glow transition-colors footer-nav-link no-underline">Preguntas
+              Frecuentes</a>
           </div>
         </div>
 
@@ -1129,8 +1360,12 @@
         <div>
           <h4 class="font-bold text-white mb-4 uppercase tracking-wider text-xs">Contacto Directo</h4>
           <p class="text-sm text-white/60 mb-3">Atención personalizada y pedidos:</p>
-          <a href="https://wa.me/573143096984" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm text-brand-forest-glow hover:text-white transition-colors mb-2 font-bold no-underline">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <a href="https://wa.me/573143096984" target="_blank" rel="noopener"
+            class="inline-flex items-center gap-2 text-sm text-brand-forest-glow hover:text-white transition-colors mb-2 font-bold no-underline">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
             +57 314 309 6984 (WhatsApp)
           </a>
           <p class="text-xs text-white/50 mt-2">Lunes a Sábado: 8:00 AM - 7:00 PM</p>
@@ -1140,138 +1375,178 @@
         <div>
           <h4 class="font-bold text-white mb-4 uppercase tracking-wider text-xs">Ubicación</h4>
           <p class="text-sm text-white/60 mb-3 flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-brand-forest-glow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <svg class="w-4 h-4 text-brand-forest-glow flex-shrink-0" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
             <span>Barrio Guaimaral, Cúcuta</span>
           </p>
 
           <!-- Tarjeta de Mapa con Pin Indicador sobre Guaimaral -->
           <div class="footer-map-card relative rounded-2xl overflow-hidden border border-white/15 shadow-lg">
-            <svg class="footer-map-svg" viewBox="0 0 320 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de Barrio Guaimaral, Cúcuta">
+            <svg class="footer-map-svg" viewBox="0 0 320 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Mapa de Barrio Guaimaral, Cúcuta">
               <defs>
                 <linearGradient id="pinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stop-color="#28ceb5" />
                   <stop offset="100%" stop-color="#12826f" />
                 </linearGradient>
                 <filter id="pinShadow" x="-30%" y="-30%" width="160%" height="160%">
-                  <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.8"/>
+                  <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.8" />
                 </filter>
               </defs>
 
               <!-- Suelo Base de Cúcuta -->
-              <rect width="320" height="160" fill="#0d2014"/>
+              <rect width="320" height="160" fill="#0d2014" />
 
               <!-- Manzanas Urbanas -->
               <g fill="#12291b" stroke="#0d2014" stroke-width="2">
-                <rect x="15" y="15" width="45" height="35" rx="3"/>
-                <rect x="70" y="15" width="50" height="35" rx="3"/>
-                <rect x="130" y="15" width="50" height="35" rx="3"/>
-                <rect x="190" y="15" width="55" height="35" rx="3"/>
-                <rect x="255" y="15" width="50" height="35" rx="3"/>
+                <rect x="15" y="15" width="45" height="35" rx="3" />
+                <rect x="70" y="15" width="50" height="35" rx="3" />
+                <rect x="130" y="15" width="50" height="35" rx="3" />
+                <rect x="190" y="15" width="55" height="35" rx="3" />
+                <rect x="255" y="15" width="50" height="35" rx="3" />
 
-                <rect x="15" y="60" width="45" height="40" rx="3"/>
-                <rect x="70" y="60" width="50" height="40" rx="3"/>
-                <rect x="130" y="60" width="50" height="40" rx="3"/>
-                <rect x="190" y="60" width="55" height="40" rx="3"/>
-                <rect x="255" y="60" width="50" height="40" rx="3"/>
+                <rect x="15" y="60" width="45" height="40" rx="3" />
+                <rect x="70" y="60" width="50" height="40" rx="3" />
+                <rect x="130" y="60" width="50" height="40" rx="3" />
+                <rect x="190" y="60" width="55" height="40" rx="3" />
+                <rect x="255" y="60" width="50" height="40" rx="3" />
 
-                <rect x="15" y="110" width="45" height="35" rx="3"/>
-                <rect x="70" y="110" width="50" height="35" rx="3"/>
-                <rect x="130" y="110" width="50" height="35" rx="3"/>
-                <rect x="190" y="110" width="55" height="35" rx="3"/>
-                <rect x="255" y="110" width="50" height="35" rx="3"/>
+                <rect x="15" y="110" width="45" height="35" rx="3" />
+                <rect x="70" y="110" width="50" height="35" rx="3" />
+                <rect x="130" y="110" width="50" height="35" rx="3" />
+                <rect x="190" y="110" width="55" height="35" rx="3" />
+                <rect x="255" y="110" width="50" height="35" rx="3" />
               </g>
 
               <!-- Parque Guaimaral (Zona verde) -->
-              <rect x="72" y="62" width="46" height="36" rx="4" fill="#1b4d2a" stroke="#256e3b" stroke-width="1"/>
-              <text x="95" y="80" fill="#7ed99e" font-size="7.5" font-family="'DM Sans', sans-serif" font-weight="600" text-anchor="middle">Parque</text>
-              <text x="95" y="89" fill="#7ed99e" font-size="6.5" font-family="'DM Sans', sans-serif" text-anchor="middle">Guaimaral</text>
+              <rect x="72" y="62" width="46" height="36" rx="4" fill="#1b4d2a" stroke="#256e3b" stroke-width="1" />
+              <text x="95" y="80" fill="#7ed99e" font-size="7.5" font-family="'DM Sans', sans-serif" font-weight="600"
+                text-anchor="middle">Parque</text>
+              <text x="95" y="89" fill="#7ed99e" font-size="6.5" font-family="'DM Sans', sans-serif"
+                text-anchor="middle">Guaimaral</text>
 
               <!-- Calles Secundarias -->
               <g stroke="#1a3b26" stroke-width="1.2" stroke-linecap="round">
-                <line x1="0" y1="55" x2="320" y2="55"/>
-                <line x1="0" y1="105" x2="320" y2="105"/>
-                <line x1="65" y1="0" x2="65" y2="160"/>
-                <line x1="250" y1="0" x2="250" y2="160"/>
+                <line x1="0" y1="55" x2="320" y2="55" />
+                <line x1="0" y1="105" x2="320" y2="105" />
+                <line x1="65" y1="0" x2="65" y2="160" />
+                <line x1="250" y1="0" x2="250" y2="160" />
               </g>
 
               <!-- Canal Bogotá -->
-              <path d="M-10,35 Q100,50 180,85 T330,125" stroke="#16432b" stroke-width="8" fill="none" opacity="0.6"/>
-              <path d="M-10,35 Q100,50 180,85 T330,125" stroke="#236640" stroke-width="3" fill="none" opacity="0.8"/>
-              <text x="35" y="32" fill="#4fa874" font-size="6.5" font-family="'DM Sans', sans-serif" letter-spacing="0.5">Canal Bogotá</text>
+              <path d="M-10,35 Q100,50 180,85 T330,125" stroke="#16432b" stroke-width="8" fill="none" opacity="0.6" />
+              <path d="M-10,35 Q100,50 180,85 T330,125" stroke="#236640" stroke-width="3" fill="none" opacity="0.8" />
+              <text x="35" y="32" fill="#4fa874" font-size="6.5" font-family="'DM Sans', sans-serif"
+                letter-spacing="0.5">Canal Bogotá</text>
 
               <!-- Av. Guaimaral (Carrera 11E) -->
-              <line x1="155" y1="0" x2="155" y2="160" stroke="#285a38" stroke-width="7"/>
-              <line x1="155" y1="0" x2="155" y2="160" stroke="#3d8252" stroke-width="1.5" stroke-dasharray="6 4"/>
-              <text x="150" y="145" fill="#8fe3ae" font-size="7" font-weight="bold" font-family="'DM Sans', sans-serif" transform="rotate(-90 150 145)">Av. Guaimaral</text>
+              <line x1="155" y1="0" x2="155" y2="160" stroke="#285a38" stroke-width="7" />
+              <line x1="155" y1="0" x2="155" y2="160" stroke="#3d8252" stroke-width="1.5" stroke-dasharray="6 4" />
+              <text x="150" y="145" fill="#8fe3ae" font-size="7" font-weight="bold" font-family="'DM Sans', sans-serif"
+                transform="rotate(-90 150 145)">Av. Guaimaral</text>
 
               <!-- Calle 8N -->
-              <line x1="0" y1="80" x2="320" y2="80" stroke="#285a38" stroke-width="5"/>
-              <text x="20" y="76" fill="#8fe3ae" font-size="6.5" font-family="'DM Sans', sans-serif" font-weight="600">Calle 8N</text>
+              <line x1="0" y1="80" x2="320" y2="80" stroke="#285a38" stroke-width="5" />
+              <text x="20" y="76" fill="#8fe3ae" font-size="6.5" font-family="'DM Sans', sans-serif"
+                font-weight="600">Calle 8N</text>
 
               <!-- Av. Libertadores -->
-              <line x1="285" y1="0" x2="285" y2="160" stroke="#244d31" stroke-width="6"/>
-              <text x="281" y="130" fill="#71b88a" font-size="6.5" font-family="'DM Sans', sans-serif" transform="rotate(-90 281 130)">Av. Libertadores</text>
+              <line x1="285" y1="0" x2="285" y2="160" stroke="#244d31" stroke-width="6" />
+              <text x="281" y="130" fill="#71b88a" font-size="6.5" font-family="'DM Sans', sans-serif"
+                transform="rotate(-90 281 130)">Av. Libertadores</text>
 
               <!-- Zona Delimitada Barrio Guaimaral -->
-              <rect x="64" y="25" width="186" height="110" rx="8" fill="rgba(40, 206, 181, 0.08)" stroke="#28ceb5" stroke-width="1.2" stroke-dasharray="4 3"/>
+              <rect x="64" y="25" width="186" height="110" rx="8" fill="rgba(40, 206, 181, 0.08)" stroke="#28ceb5"
+                stroke-width="1.2" stroke-dasharray="4 3" />
 
               <!-- PIN / INDICADOR SOBRE BARRIO GUAIMARAL (x=160, y=80) -->
               <g class="map-pulse-group">
-                <circle cx="160" cy="80" r="14" class="map-pulse-ring" fill="none" stroke="#28ceb5" stroke-width="1.8"/>
-                <circle cx="160" cy="80" r="8" fill="rgba(40, 206, 181, 0.3)"/>
-                <circle cx="160" cy="80" r="3" fill="#28ceb5"/>
+                <circle cx="160" cy="80" r="14" class="map-pulse-ring" fill="none" stroke="#28ceb5"
+                  stroke-width="1.8" />
+                <circle cx="160" cy="80" r="8" fill="rgba(40, 206, 181, 0.3)" />
+                <circle cx="160" cy="80" r="3" fill="#28ceb5" />
               </g>
 
               <!-- Marcador Droplet Pin -->
               <g filter="url(#pinShadow)">
-                <path d="M160,54 C153,54 147.5,59.5 147.5,66.5 C147.5,75.5 160,86 160,86 C160,86 172.5,75.5 172.5,66.5 C172.5,59.5 167,54 160,54 Z" fill="url(#pinGrad)"/>
-                <circle cx="160" cy="65.5" r="4" fill="#ffffff"/>
-                <circle cx="160" cy="65.5" r="2" fill="#12826f"/>
+                <path
+                  d="M160,54 C153,54 147.5,59.5 147.5,66.5 C147.5,75.5 160,86 160,86 C160,86 172.5,75.5 172.5,66.5 C172.5,59.5 167,54 160,54 Z"
+                  fill="url(#pinGrad)" />
+                <circle cx="160" cy="65.5" r="4" fill="#ffffff" />
+                <circle cx="160" cy="65.5" r="2" fill="#12826f" />
               </g>
 
               <!-- Etiqueta Flotante B. Guaimaral -->
               <g>
-                <rect x="110" y="28" width="100" height="18" rx="9" fill="#09180d" stroke="#28ceb5" stroke-width="1" opacity="0.95"/>
-                <circle cx="120" cy="37" r="2.5" fill="#28ceb5"/>
-                <text x="162" y="40.5" fill="#ffffff" font-size="8.5" font-weight="bold" text-anchor="middle" font-family="'DM Sans', sans-serif">B. GUAIMARAL</text>
+                <rect x="110" y="28" width="100" height="18" rx="9" fill="#09180d" stroke="#28ceb5" stroke-width="1"
+                  opacity="0.95" />
+                <circle cx="120" cy="37" r="2.5" fill="#28ceb5" />
+                <text x="162" y="40.5" fill="#ffffff" font-size="8.5" font-weight="bold" text-anchor="middle"
+                  font-family="'DM Sans', sans-serif">B. GUAIMARAL</text>
               </g>
             </svg>
 
             <!-- Tag de Comuna en esquina -->
-            <div class="absolute top-2 left-2 bg-black/60 backdrop-blur-md px-2 py-0.5 rounded-full text-[10px] font-semibold text-emerald-300 flex items-center gap-1.5 border border-white/10 pointer-events-none">
+            <div
+              class="absolute top-2 left-2 bg-black/60 backdrop-blur-md px-2 py-0.5 rounded-full text-[10px] font-semibold text-emerald-300 flex items-center gap-1.5 border border-white/10 pointer-events-none">
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
               <span>Cúcuta • Comuna 5</span>
             </div>
           </div>
 
           <!-- Enlace interactivo a Google Maps -->
-          <a href="https://maps.google.com/?q=Barrio+Guaimaral,+Cucuta,+Colombia" target="_blank" rel="noopener" class="mt-3 inline-flex items-center justify-between w-full px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs text-white/80 hover:text-white transition-all no-underline group">
+          <a href="https://maps.google.com/?q=Barrio+Guaimaral,+Cucuta,+Colombia" target="_blank" rel="noopener"
+            class="mt-3 inline-flex items-center justify-between w-full px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs text-white/80 hover:text-white transition-all no-underline group">
             <span class="flex items-center gap-1.5">
-              <svg class="w-3.5 h-3.5 text-brand-forest-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <svg class="w-3.5 h-3.5 text-brand-forest-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
               <span>Ver en Google Maps</span>
             </span>
-            <svg class="w-3.5 h-3.5 text-white/40 group-hover:translate-x-0.5 group-hover:text-white transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            <svg class="w-3.5 h-3.5 text-white/40 group-hover:translate-x-0.5 group-hover:text-white transition-all"
+              fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
           </a>
         </div>
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-white/50 gap-4 text-center sm:text-left">
-        <p class="leading-relaxed">&copy; 2026 Yojandry Nava — Embajadora Independiente FuXion. Todos los derechos reservados.</p>
-        <p class="text-white/40 leading-relaxed sm:text-right">Desarrollado por: <a href="http://www.luiscabre.com" target="_blank" rel="noopener" class="text-white/70 hover:text-white transition-colors no-underline font-medium">luiscabre.com</a></p>
+      <div
+        class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-white/50 gap-4 text-center sm:text-left">
+        <p class="leading-relaxed">&copy; 2026 Yojandry Nava — Embajadora Independiente FuXion. Todos los derechos
+          reservados.</p>
+        <p class="text-white/40 leading-relaxed sm:text-right">Desarrollado por: <a href="http://www.luiscabre.com"
+            target="_blank" rel="noopener"
+            class="text-white/70 hover:text-white transition-colors no-underline font-medium">luiscabre.com</a></p>
       </div>
     </div>
   </footer>
 
   <!-- 16. CARRITO SLIDE-OVER LATERAL -->
-  <div id="cart-overlay" class="fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300" onclick="closeCart()"></div>
-  <aside id="cart-sidebar" class="fixed top-0 right-0 h-full w-full max-w-md bg-white z-50 transform translate-x-full transition-transform duration-300 flex flex-col shadow-2xl">
+  <div id="cart-overlay"
+    class="fixed inset-0 bg-black/50 z-50 opacity-0 pointer-events-none transition-opacity duration-300"
+    onclick="closeCart()"></div>
+  <aside id="cart-sidebar"
+    class="fixed top-0 right-0 h-full w-full max-w-md bg-white z-50 transform translate-x-full transition-transform duration-300 flex flex-col shadow-2xl">
     <div class="flex items-center justify-between p-6 border-b border-brand-linen">
       <div>
         <h3 class="font-serif text-2xl text-brand-dark font-bold">Tu carrito</h3>
         <p class="text-sm text-brand-muted" id="cart-items-count">0 productos</p>
       </div>
-      <button onclick="closeCart()" class="p-2 rounded-full transition-colors text-brand-muted hover:bg-canvas" aria-label="Cerrar carrito">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      <button onclick="closeCart()" class="p-2 rounded-full transition-colors text-brand-muted hover:bg-canvas"
+        aria-label="Cerrar carrito">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
       </button>
     </div>
 
@@ -1290,8 +1565,13 @@
       </div>
 
       <div class="space-y-3">
-        <button onclick="sendCartToWhatsApp()" class="w-full flex items-center justify-center gap-3 py-3.5 rounded-full text-white font-semibold transition-all duration-300 hover:-translate-y-0.5 shadow-md" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <button onclick="sendCartToWhatsApp()"
+          class="w-full flex items-center justify-center gap-3 py-3.5 rounded-full text-white font-semibold transition-all duration-300 hover:-translate-y-0.5 shadow-md"
+          style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
           <span>Pedir por WhatsApp</span>
         </button>
       </div>
@@ -1299,8 +1579,14 @@
   </aside>
 
   <!-- 17. BOTÓN FLOTANTE WHATSAPP -->
-  <a href="https://wa.me/573143096984" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-30 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110" style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%); box-shadow: 0 6px 25px rgba(40, 206, 181, 0.45);" aria-label="WhatsApp Yojandry">
-    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <a href="https://wa.me/573143096984" target="_blank" rel="noopener"
+    class="fixed bottom-6 right-6 z-30 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110"
+    style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%); box-shadow: 0 6px 25px rgba(40, 206, 181, 0.45);"
+    aria-label="WhatsApp Yojandry">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
   </a>
 
   <!-- Scripts -->
@@ -1310,4 +1596,5 @@
   <script src="js/quiz.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

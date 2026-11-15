@@ -2540,6 +2540,16 @@ body {
   order: 2 !important;
 }
 
+@media (min-width: 1024px) {
+  .lg\:order-1 {
+    order: 1 !important;
+  }
+
+  .lg\:order-2 {
+    order: 2 !important;
+  }
+}
+
 .zigzag-image {
   border-radius: 1.5rem;
   overflow: hidden;
@@ -4149,4 +4159,66 @@ a:visited,
 .whitespace-nowrap { white-space: nowrap !important; }
 @media (min-width: 640px) {
   .sm\:px-4 { padding-left: 1rem !important; padding-right: 1rem !important; }
+}
+
+/* ===== HERO METRICS CENTERING (MOBILE) & RESPONSIVE LAYOUT ===== */
+.hero-metrics-container {
+  width: 100%;
+  max-width: 32rem;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero-metric-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+.hero-metric-item p {
+  text-align: center !important;
+}
+
+@media (min-width: 1024px) {
+  .hero-metrics-container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .hero-metric-item {
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+
+  .hero-metric-item p {
+    text-align: left !important;
+  }
+
+  .hero-metric-item:first-child {
+    padding-left: 0 !important;
+    padding-right: 1.25rem !important;
+  }
+
+  .hero-metric-item:nth-child(2) {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  .hero-metric-item:last-child {
+    padding-left: 1.25rem !important;
+    padding-right: 0 !important;
+  }
+
+  /* Desktop order override guarantee */
+  .lg\:order-1 {
+    order: 1 !important;
+  }
+  .lg\:order-2 {
+    order: 2 !important;
+  }
 }

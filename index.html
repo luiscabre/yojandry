@@ -178,20 +178,20 @@
               </a>
             </div>
 
-            <!-- Métricas Proporcionales -->
-            <div class="pt-6 border-t border-brand-dark/15 max-w-lg">
+            <!-- Métricas Proporcionales (Centradas en móvil, alineadas a la izquierda en desktop) -->
+            <div class="pt-6 border-t border-brand-dark/15 max-w-lg hero-metrics-container">
               <div class="grid grid-cols-3 divide-x divide-brand-dark/15">
-                <div class="pr-3 sm:pr-5 text-left">
+                <div class="hero-metric-item">
                   <p class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-dark leading-none">4</p>
                   <p class="text-[11px] sm:text-xs text-brand-forest uppercase tracking-wider font-semibold mt-1.5">
                     Fases</p>
                 </div>
-                <div class="px-3 sm:px-5 text-left">
+                <div class="hero-metric-item">
                   <p class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-dark leading-none">100%</p>
                   <p class="text-[11px] sm:text-xs text-brand-forest uppercase tracking-wider font-semibold mt-1.5">
                     Natural</p>
                 </div>
-                <div class="pl-3 sm:pl-5 text-left">
+                <div class="hero-metric-item">
                   <p class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-dark leading-none">0</p>
                   <p class="text-[11px] sm:text-xs text-brand-forest uppercase tracking-wider font-semibold mt-1.5">
                     Dietas Extremas</p>
@@ -734,10 +734,10 @@
           </div>
         </div>
 
-        <!-- Fila 2 (Invertida: Contenido a la izquierda, Foto a la derecha) -->
+        <!-- Fila 2 (Invertida: Contenido a la izquierda, Foto a la derecha en desktop; Foto arriba en móvil) -->
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <!-- Columna Contenido (Lado Izquierdo) -->
-          <div class="lg:pr-6">
+          <!-- Columna Contenido (Abajo en móvil, Izquierda en desktop) -->
+          <div class="lg:pr-6 order-2 lg:order-1">
             <div class="pill-badge mb-4">Tu Nueva Versión</div>
             <h3 class="font-serif text-3xl md:text-4xl text-brand-dark mb-6 leading-tight font-bold">
               Recupera la claridad, la vitalidad y el control de tu cuerpo
@@ -784,8 +784,8 @@
             </a>
           </div>
 
-          <!-- Columna Imagen (Lado Derecho) -->
-          <div class="relative flex items-center justify-center">
+          <!-- Columna Imagen (Arriba en móvil, Derecha en desktop) -->
+          <div class="relative flex items-center justify-center order-1 lg:order-2">
             <div class="w-full aspect-square max-w-md rounded-3xl overflow-hidden shadow-xl bg-white p-2">
               <img src="img/maire5.jpg" alt="Yojandry Nava - Recupera la claridad, vitalidad y control"
                 class="w-full h-full object-cover rounded-2xl zigzag-image">
@@ -828,11 +828,11 @@
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-1">Prunex 1</h3>
               <p class="text-sm text-brand-muted mb-4 line-clamp-2">Limpia el colon y combate el estreñimiento de forma
                 natural. Con ciruela y linaza.</p>
-              <div class="mt-auto flex items-baseline justify-between pt-3 border-t border-brand-dark/5">
+              <div class="mt-auto flex items-center justify-between pt-3 border-t border-brand-dark/5">
                 <p class="font-bold text-brand-dark text-xl">$138.100 <span
                     class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
                 <button onclick="addToCart('prunex')"
-                  class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
+                  class="text-sm font-semibold px-3.5 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
                   style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
               </div>
             </div>
@@ -855,11 +855,11 @@
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-1">Flora Liv</h3>
               <p class="text-sm text-brand-muted mb-4 line-clamp-2">Regenera la microbiota. Más de 10 mil millones de
                 probióticos vivos por toma.</p>
-              <div class="mt-auto flex items-baseline justify-between pt-3 border-t border-brand-dark/5">
+              <div class="mt-auto flex items-center justify-between pt-3 border-t border-brand-dark/5">
                 <p class="font-bold text-brand-dark text-xl">$165.400 <span
                     class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
                 <button onclick="addToCart('floraliv')"
-                  class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
+                  class="text-sm font-semibold px-3.5 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
                   style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
               </div>
             </div>
@@ -882,11 +882,11 @@
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-1">Rexet</h3>
               <p class="text-sm text-brand-muted mb-4 line-clamp-2">Protege y desintoxica tu hígado. Bebida efervescente
                 con extracto de alcachofa y boldo.</p>
-              <div class="mt-auto flex items-baseline justify-between pt-3 border-t border-brand-dark/5">
+              <div class="mt-auto flex items-center justify-between pt-3 border-t border-brand-dark/5">
                 <p class="font-bold text-brand-dark text-xl">$138.100 <span
                     class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
                 <button onclick="addToCart('rexet')"
-                  class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
+                  class="text-sm font-semibold px-3.5 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
                   style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
               </div>
             </div>
@@ -910,11 +910,11 @@
               <h3 class="font-serif text-xl font-bold text-brand-dark mb-1">Vita Xtra T+</h3>
               <p class="text-sm text-brand-muted mb-4 line-clamp-2">Energía celular sostenida con maíz morado, maca,
                 ginseng y guayusa. Sin azúcar.</p>
-              <div class="mt-auto flex items-baseline justify-between pt-3 border-t border-brand-dark/5">
+              <div class="mt-auto flex items-center justify-between pt-3 border-t border-brand-dark/5">
                 <p class="font-bold text-brand-dark text-xl">$138.100 <span
                     class="text-xs font-normal text-brand-muted">/ 28 sobres</span></p>
                 <button onclick="addToCart('vitta')"
-                  class="text-xs font-semibold px-3 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
+                  class="text-sm font-semibold px-3.5 py-1.5 rounded-full text-white shadow-sm transition-all duration-200 hover:scale-105"
                   style="background: linear-gradient(135deg, #12826f 0%, #28ceb5 100%);">Agregar +</button>
               </div>
             </div>
